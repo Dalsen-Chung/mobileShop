@@ -1,0 +1,18 @@
+body {
+    background-color: #2F4056;
+}
+.login-wrapper {
+    max-width: 400px;
+    margin: 180px auto 0;
+    color: #fafafa;
+}
+.login-wrapper h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.login-wrapper .code-img {
+    cursor: pointer;
+    display: inline-block;
+    width: 90px;
+    height: 38px;
+}
