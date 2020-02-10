@@ -68,7 +68,7 @@
     </div>
 </div>
 <div class="layui-body">
-  <div style="padding: 15px;">管理员用户</div>
+  <div style="padding: 15px;">商品列表</div>
 </div>
         <div class="layui-footer">
             © 许铭聪 - 1640225146

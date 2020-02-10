@@ -1,14 +1,10 @@
 <?php
 namespace Admin\Controller;
 use Common\Controller\AdminBaseController;
-class UserController extends AdminBaseController {
+class OrderController extends AdminBaseController {
 
-    public function member(){
-        $this->display();
-    }
-
-    public function admin() {
-        $this->display();
+    public function index(){
+      $this->display();
     }
 
     public function hello() {
