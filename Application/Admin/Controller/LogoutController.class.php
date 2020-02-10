@@ -1,7 +1,7 @@
 <?php
 namespace Admin\Controller;
-use Think\Controller;
-class LogoutController extends Controller {
+use Common\Controller\AdminBaseController;
+class LogoutController extends AdminBaseController {
 
     /**
      * 执行登出方法
