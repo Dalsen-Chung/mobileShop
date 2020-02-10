@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>嘉兴手机商城管理后台</title>
     <link rel="stylesheet" href="/mobileShop/Public/admin/css/layui.css">
+    <link rel="stylesheet" href="/mobileShop/Public/admin/css/common.css">
 </head>
 <body class="layui-layout-body">
     <div class="layui-layout layui-layout-admin">
@@ -67,10 +68,17 @@
         </ul>
     </div>
 </div>
-<div class="layui-body">
-  <div style="padding: 15px;">管理员用户</div>
+        <div class="layui-body main-content">
+<div class="user-admin" style="padding: 15px;">
+  <div class="layui-card">
+    <div class="layui-card-header">管理员列表</div>
+    <div class="layui-card-body">
+      <table id="adminList"></table>
+    </div>
+  </div>
 </div>
-        <div class="layui-footer">
+        </div>
+        <div class="layui-footer footer">
             © 许铭聪 - 1640225146
         </div>
     </div>

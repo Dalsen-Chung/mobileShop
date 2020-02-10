@@ -3,12 +3,12 @@ namespace Admin\Controller;
 use Common\Controller\AdminBaseController;
 class UserController extends AdminBaseController {
 
-    public function member(){
-        $this->display();
-    }
-
-    public function admin() {
-        $this->display();
+    public function get_admin_list() {
+        $admin_user = M('admin_user');  //..实例化admin_user模型
+        $user_list = $admin_user->select();
+        $res['code'] = 0;
+        $res['data'] = $user_list;
+        $this->ajaxReturn($res);
     }
 
     public function hello() {
