@@ -7,6 +7,9 @@
     <title>嘉兴手机商城管理后台</title>
     <link rel="stylesheet" href="/mobileShop/Public/admin/css/layui.css">
     <link rel="stylesheet" href="/mobileShop/Public/admin/css/common.css">
+    <script>
+      const USER_ID = '<?php echo (session('user_id')); ?>';
+    </script>
 </head>
 <body class="layui-layout-body">
     <div class="layui-layout layui-layout-admin">
@@ -71,9 +74,15 @@
         <div class="layui-body main-content">
 <div class="user-admin" style="padding: 15px;">
   <div class="layui-card">
-    <div class="layui-card-header">管理员列表</div>
+    <div class="layui-card-header">管理员用户</div>
     <div class="layui-card-body">
       <table id="adminList"></table>
+      <script type="text/html" id="adminBar">
+        <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+        {{#  if(d.id !== USER_ID){ }}
+          <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+        {{#  } }}
+      </script>
     </div>
   </div>
 </div>

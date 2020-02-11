@@ -1,9 +1,15 @@
 <include file="Public/header" />
 <div class="user-admin" style="padding: 15px;">
   <div class="layui-card">
-    <div class="layui-card-header">管理员列表</div>
+    <div class="layui-card-header">管理员用户</div>
     <div class="layui-card-body">
       <table id="adminList"></table>
+      <script type="text/html" id="adminBar">
+        <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+        {{#  if(d.id !== USER_ID){ }}
+          <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+        {{#  } }}
+      </script>
     </div>
   </div>
 </div>

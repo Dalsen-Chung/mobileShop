@@ -7,6 +7,9 @@
     <title>嘉兴手机商城管理后台</title>
     <link rel="stylesheet" href="/mobileShop/Public/admin/css/layui.css">
     <link rel="stylesheet" href="/mobileShop/Public/admin/css/common.css">
+    <script>
+      const USER_ID = '<?php echo (session('user_id')); ?>';
+    </script>
 </head>
 <body class="layui-layout-body">
     <div class="layui-layout layui-layout-admin">
