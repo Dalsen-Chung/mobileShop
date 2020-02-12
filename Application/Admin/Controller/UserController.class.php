@@ -3,7 +3,7 @@ namespace Admin\Controller;
 use Common\Controller\AdminBaseController;
 class UserController extends AdminBaseController {
 
-    public function get_admin_list() {
+    public function get_admin_list() {  //  查询管理员列表
         $page = I('page');
         $limit = I('limit');
         $start = ($page - 1) * $limit;
@@ -19,9 +19,23 @@ class UserController extends AdminBaseController {
         $this->ajaxReturn($res);
     }
 
-    public function hello() {
-        $admin_user = D('AdminUser');
-        $data = $admin_user->select();
-        $this->ajaxReturn($data);
+    public function delete_admin() {    //  删除管理员用户
+        $id = I('user_id');
+        $admin_user = M('admin_user');  //..实例化admin_user模型
+        $data['id'] = $id;
+        $res = $admin_user->where($data)->delete();
+        $this->ajaxReturn($res);
+    }
+
+    public function edit_admin() {    //  编辑管理员用户
+        $id = I('id');
+        $name = I('name');
+        $status = I('status');
+        $admin_user = M('admin_user');  //..实例化admin_user模型
+        $where['id'] = $id;
+        $data['name'] = $name;
+        $data['status'] = $status;
+        $res = $admin_user->where($where)->save($data);
+        $this->ajaxReturn($res);
     }
 }

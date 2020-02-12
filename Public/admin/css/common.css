@@ -6,3 +6,10 @@
 .footer {
   background-color: #fff !important;
 }
+/* layui css 重置 */
+.layui-card > .layui-card-header {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: space-between;
+}

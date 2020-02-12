@@ -11,7 +11,7 @@
  Target Server Version : 100410
  File Encoding         : 65001
 
- Date: 11/02/2020 17:26:17
+ Date: 12/02/2020 17:33:31
 */
 
 SET NAMES utf8mb4;
@@ -36,16 +36,9 @@ CREATE TABLE `jx_admin_user`  (
 -- Records of jx_admin_user
 -- ----------------------------
 INSERT INTO `jx_admin_user` VALUES (1, 'admin', '许铭聪', '21232f297a57a5a743894a0e4a801fc3', 1, 1, 1581403417);
-INSERT INTO `jx_admin_user` VALUES (2, 'admin1', '管理员1', '21232f297a57a5a743894a0e4a801fc3', 2, 0, 1581403426);
+INSERT INTO `jx_admin_user` VALUES (2, 'admin1', '管理员222', '21232f297a57a5a743894a0e4a801fc3', 2, 0, 1581403426);
 INSERT INTO `jx_admin_user` VALUES (3, '3', '3', '3', 3, 1, 1581403426);
 INSERT INTO `jx_admin_user` VALUES (4, '3', '3', '3', 3, 1, 1581403426);
-INSERT INTO `jx_admin_user` VALUES (5, '3', '3', '3', 3, 1, 1581403426);
-INSERT INTO `jx_admin_user` VALUES (6, '3', '3', '3', 3, 1, 1581403426);
-INSERT INTO `jx_admin_user` VALUES (7, '3', '3', '3', 3, 1, 1581403426);
-INSERT INTO `jx_admin_user` VALUES (8, '3', '3', '3', 3, 1, 1581403426);
-INSERT INTO `jx_admin_user` VALUES (9, '3', '3', '3', 3, 1, 1581403426);
-INSERT INTO `jx_admin_user` VALUES (10, '3', '3', '3', 3, 1, 1581403426);
-INSERT INTO `jx_admin_user` VALUES (11, '3', '3', '3', 3, 1, 1581403426);
 
 -- ----------------------------
 -- Table structure for jx_brand
