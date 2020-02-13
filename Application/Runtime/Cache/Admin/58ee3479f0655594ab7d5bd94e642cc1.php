@@ -80,6 +80,7 @@
             © 许铭聪 - 1640225146
         </div>
     </div>
+    <script src="/mobileShop/Public/home/js/jquery-3.4.1.min.js"></script>
     <script src="/mobileShop/Public/admin/layui.js"></script>
     <script src="/mobileShop/Public/admin/js/common.js"></script>
 </body>

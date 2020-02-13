@@ -38,4 +38,20 @@ class UserController extends AdminBaseController {
         $res = $admin_user->where($where)->save($data);
         $this->ajaxReturn($res);
     }
+
+    public function add_admin() {    //  编辑管理员用户
+        $account = I('account');
+        $name = I('name');
+        $status = I('status');
+        $password = md5(I('password'));
+
+        $admin_user = M('admin_user');  //..实例化admin_user模型
+        $data['name'] = $name;
+        $data['status'] = $status;
+        $data['account'] = $account;
+        $data['password'] = $password;
+        $data['addtime'] = time();
+        $res = $admin_user->add($data);
+        $this->ajaxReturn($res);
+    }
 }

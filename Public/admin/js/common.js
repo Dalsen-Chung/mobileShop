@@ -78,6 +78,8 @@ layui.use(['element', 'table','form'], function () {
                             });
                             layer.closeAll('page'); //关闭所有页面层
                             layer.msg('编辑成功');
+                        } else {
+                            layer.msg('编辑失败');
                         }
                     },
                     error: function (data) {
@@ -102,25 +104,26 @@ layui.use(['element', 'table','form'], function () {
     form.on('submit(addAddSave)', function (data) {
         var submitData = data.field //当前容器的全部表单字段，名值对形式：{name: value}
         console.log(submitData)
-        // $.ajax({
-        //     url: "edit_admin",
-        //     data: data.field,
-        //     type: "Post",
-        //     dataType: "json",
-        //     success: function (data) {
-        //         if (data === 1) {
-        //             obj.update({
-        //                 name: submitData.name
-        //                 , status: submitData.status == '1' ? '正常' : '禁用'
-        //             });
-        //             layer.closeAll('page'); //关闭所有页面层
-        //             layer.msg('编辑成功');
-        //         }
-        //     },
-        //     error: function (data) {
-        //         layer.msg('编辑失败');
-        //     }
-        // });
+        $.ajax({
+            url: "add_admin",
+            data: submitData,
+            type: "Post",
+            dataType: "json",
+            success: function (data) {
+                if (data) {
+                    layer.closeAll('page'); //关闭所有页面层
+                    layer.msg('添加成功');
+                    setTimeout(() => {
+                        location.reload();
+                    }, 500);
+                } else {
+                    layer.msg('添加失败');
+                }
+            },
+            error: function (data) {
+                layer.msg('添加失败');
+            }
+        });
         return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。
     });
 });

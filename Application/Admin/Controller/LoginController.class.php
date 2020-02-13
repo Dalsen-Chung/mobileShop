@@ -45,6 +45,9 @@ class LoginController extends Controller {
             if (md5($password) !== $user['password']) {
                 return $this->error('密码错误',U('Login/index'));
             }
+            if ($user['status'] === '0') {
+                return $this->error('该用户禁止登陆',U('Login/index'));
+            }
             session('user_id', $user['id']);    //..用户已登录，存入session信息
             session('user_name', $user['name']);
             return $this->success('登录成功',U('Index/index'));
