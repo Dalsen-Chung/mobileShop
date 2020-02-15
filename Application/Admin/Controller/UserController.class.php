@@ -72,4 +72,30 @@ class UserController extends AdminBaseController {
         $res['count'] = $user->count();
         $this->ajaxReturn($res);
     }
+
+    public function delete_user() {    //  删除会员用户
+        $id = I('user_id');
+        $user = M('user');  //..实例化user模型
+        $data['id'] = $id;
+        $res = $user->where($data)->delete();
+        $this->ajaxReturn($res);
+    }
+
+    public function edit_user() {    //  编辑会员用户
+        $id = I('id');
+        $name = I('name');
+        $status = I('status');
+        $sex = I('sex');
+        $tel = I('tel');
+        $balance = intval(floatval(I('balance')) * 100);    //  先将字符串转换成浮点数再乘以100，最后转成int
+        $user = M('user');  //..实例化user模型
+        $where['id'] = $id;
+        $data['name'] = $name;
+        $data['status'] = $status;
+        $data['sex'] = $sex;
+        $data['tel'] = $tel;
+        $data['balance'] = $balance;
+        $res = $user->where($where)->save($data);
+        $this->ajaxReturn($res);
+    }
 }

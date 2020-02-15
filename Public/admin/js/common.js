@@ -68,11 +68,11 @@ layui.use(['element', 'table','form'], function () {
                 var submitData = data.field //当前容器的全部表单字段，名值对形式：{name: value}
                 $.ajax({
                     url: "edit_admin",
-                    data: data.field,
+                    data: submitData,
                     type: "Post",
                     dataType: "json",
                     success: function (data) {
-                        if (data === 1) {
+                        if (data !== false) {
                             obj.update({
                                 name: submitData.name
                                 , status: submitData.status == '1' ? '正常' : '禁用'
@@ -154,7 +154,7 @@ layui.use(['element', 'table','form'], function () {
     table.render(memberTbOpt);
 
     //监听管理员用户表格工具条 
-    table.on('tool(adminUserTb)', function (obj) { //注：tool 是工具条事件名，test 是 table 原始容器的属性 lay-filter="对应的值"
+    table.on('tool(memberTb)', function (obj) { //注：tool 是工具条事件名，test 是 table 原始容器的属性 lay-filter="对应的值"
         var data = obj.data; //获得当前行数据
         var layEvent = obj.event; //获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
 
@@ -164,7 +164,7 @@ layui.use(['element', 'table','form'], function () {
                 layer.close(index);
                 //向服务端发送删除指令
                 $.ajax({
-                    url: "delete_admin",
+                    url: "delete_user",
                     data: {
                         'user_id': data.id
                     },
@@ -185,28 +185,34 @@ layui.use(['element', 'table','form'], function () {
             });
         } else if (layEvent === 'edit') { //编辑
             //给表单赋值
-            form.val("editAdminUser", { //formTest 即 class="layui-form" 所在元素属性 lay-filter="" 对应的值
+            form.val("editMember", { //formTest 即 class="layui-form" 所在元素属性 lay-filter="" 对应的值
                 "id": data.id,
-                "name": data.name // "name": "value"
-                , "status": data.status === '正常' ? '1' : '0' 
+                "name": data.name, // "name": "value"
+                "status": data.status === '正常' ? '1' : '0',
+                "tel": data.tel,
+                "sex": data.sex === '男' ? '1' : '2',
+                "balance": data.balance
             });
             layer.open({
                 type: 1,
                 title: '编辑管理员',
-                content: $('#editAdminUser')
+                content: $('#editMember')
             })
-            form.on('submit(adminEditSave)', function (data) {
+            form.on('submit(memberEditSave)', function (data) {
                 var submitData = data.field //当前容器的全部表单字段，名值对形式：{name: value}
                 $.ajax({
-                    url: "edit_admin",
-                    data: data.field,
+                    url: "edit_user",
+                    data: submitData,
                     type: "Post",
                     dataType: "json",
                     success: function (data) {
-                        if (data === 1) {
+                        if (data !== false) {
                             obj.update({
                                 name: submitData.name
                                 , status: submitData.status == '1' ? '正常' : '禁用'
+                                , balance: submitData.balance
+                                , tel: submitData.tel
+                                , sex: submitData.sex === '1' ? '男' : '女'
                             });
                             layer.closeAll('page'); //关闭所有页面层
                             layer.msg('编辑成功');

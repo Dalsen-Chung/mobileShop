@@ -2784,3 +2784,2164 @@ SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0012s ]
 SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0003s ]
 SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0003s ]
 
+[ 2020-02-15T17:14:32+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2020-02-15T17:14:32+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T17:14:40+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/delete_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0011s ]
+SQL: DELETE FROM `jx_user` WHERE `id` = 2 [ RunTime:0.0033s ]
+
+[ 2020-02-15T17:14:40+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2020-02-15T17:14:40+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000032s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T17:30:20+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005930s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2020-02-15T17:30:20+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000148s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2020-02-15T17:30:37+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003043s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+
+[ 2020-02-15T17:30:38+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-02-15T17:32:22+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000092s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2020-02-15T17:32:22+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_admin_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `jx_admin_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_admin_user` LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_admin_user` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-02-15T17:32:23+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000030s ]
+
+[ 2020-02-15T17:32:23+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_admin_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `jx_admin_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jx_admin_user` LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_admin_user` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-02-15T17:32:28+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000036s ]
+SQL: SHOW COLUMNS FROM `jx_admin_user` [ RunTime:0.0009s ]
+SQL: UPDATE `jx_admin_user` SET `name`='管理员2',`status`='0' WHERE `id` = 2 [ RunTime:0.0016s ]
+
+[ 2020-02-15T17:32:31+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000050s ]
+
+[ 2020-02-15T17:32:31+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_admin_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `jx_admin_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_admin_user` LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_admin_user` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-02-15T17:32:33+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000198s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000037s ]
+
+[ 2020-02-15T17:32:33+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-02-15T17:32:54+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000042s ]
+
+[ 2020-02-15T17:32:54+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2020-02-15T17:33:49+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003112s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000039s ]
+
+[ 2020-02-15T17:33:50+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-02-15T17:34:06+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000042s ]
+
+[ 2020-02-15T17:34:06+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:49:12+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
+
+[ 2020-02-15T20:49:12+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:49:20+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0010s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='1',`sex`='1',`tel`='13555555555',`balance`='10055' WHERE `id` = 1 [ RunTime:0.0033s ]
+
+[ 2020-02-15T20:49:31+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000144s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+
+[ 2020-02-15T20:49:31+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:49:40+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0012s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='1',`sex`='2',`tel`='13555555555',`balance`='10055' WHERE `id` = 1 [ RunTime:0.0010s ]
+
+[ 2020-02-15T20:49:43+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000040s ]
+
+[ 2020-02-15T20:49:43+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-02-15T20:50:00+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0010s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='1',`sex`='2',`tel`='13555555555',`balance`='10055' WHERE `id` = 1 [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:50:39+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000040s ]
+
+[ 2020-02-15T20:50:39+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-02-15T20:50:54+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000041s ]
+
+[ 2020-02-15T20:50:54+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:51:04+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0008s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='1',`sex`='2',`tel`='13555555555',`balance`='8888' WHERE `id` = 1 [ RunTime:0.0007s ]
+
+[ 2020-02-15T20:51:06+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000047s ]
+
+[ 2020-02-15T20:51:06+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000030s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-02-15T20:51:17+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0015s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='0',`sex`='2',`tel`='13555555555',`balance`='8888' WHERE `id` = 1 [ RunTime:0.0014s ]
+
+[ 2020-02-15T20:51:19+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000041s ]
+
+[ 2020-02-15T20:51:19+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:51:23+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0011s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='1',`sex`='2',`tel`='13555555555',`balance`='8888' WHERE `id` = 1 [ RunTime:0.0013s ]
+
+[ 2020-02-15T20:51:25+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004463s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2020-02-15T20:51:25+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:51:30+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0016s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='1',`sex`='1',`tel`='13555555555',`balance`='8888' WHERE `id` = 1 [ RunTime:0.0013s ]
+
+[ 2020-02-15T20:51:32+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2020-02-15T20:51:32+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-02-15T20:51:44+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0008s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='1',`sex`='1',`tel`='13666666666',`balance`='8888' WHERE `id` = 1 [ RunTime:0.0010s ]
+
+[ 2020-02-15T20:51:46+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003150s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000041s ]
+
+[ 2020-02-15T20:51:46+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-02-15T20:52:52+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000041s ]
+
+[ 2020-02-15T20:52:52+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000166s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:53:11+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0018s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='1',`sex`='1',`tel`='15622222222',`balance`='8888' WHERE `id` = 1 [ RunTime:0.0014s ]
+
+[ 2020-02-15T20:53:13+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2020-02-15T20:53:13+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2020-02-15T20:53:55+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000046s ]
+
+[ 2020-02-15T20:53:56+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000021s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:53:58+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0010s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='1',`sex`='1',`tel`='15622222222',`balance`='8888' WHERE `id` = 1 [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:54:13+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0012s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='1',`sex`='1',`tel`='15622222222',`balance`='8888' WHERE `id` = 1 [ RunTime:0.0003s ]
+
+[ 2020-02-15T20:54:18+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000040s ]
+
+[ 2020-02-15T20:54:19+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000031s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:54:27+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000042s ]
+
+[ 2020-02-15T20:54:27+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:54:31+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0010s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='1',`sex`='1',`tel`='15622222222',`balance`='8888' WHERE `id` = 1 [ RunTime:0.0003s ]
+
+[ 2020-02-15T20:55:09+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0013s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='1',`sex`='1',`tel`='15622222222',`balance`='8888' WHERE `id` = 1 [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:55:16+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0017s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='1',`sex`='1',`tel`='15622222221',`balance`='8888' WHERE `id` = 1 [ RunTime:0.0015s ]
+
+[ 2020-02-15T20:55:32+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000050s ]
+
+[ 2020-02-15T20:55:32+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:55:43+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000043s ]
+
+[ 2020-02-15T20:55:43+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-02-15T20:55:56+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0013s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='1',`sex`='1',`tel`='15622222221',`balance`='6666' WHERE `id` = 1 [ RunTime:0.0014s ]
+
+[ 2020-02-15T20:55:58+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2020-02-15T20:55:58+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:57:26+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000042s ]
+
+[ 2020-02-15T20:57:26+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:57:29+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000146s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0010s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='1',`sex`='1',`tel`='15622222221',`balance`='6666' WHERE `id` = 1 [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:57:33+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000144s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0011s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='1',`sex`='1',`tel`='15622222221',`balance`='6666' WHERE `id` = 1 [ RunTime:0.0004s ]
+
+[ 2020-02-15T20:57:35+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+
+[ 2020-02-15T20:57:35+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:58:05+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2020-02-15T20:58:05+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_admin_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `jx_admin_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_admin_user` LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_admin_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:58:08+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `jx_admin_user` [ RunTime:0.0010s ]
+SQL: UPDATE `jx_admin_user` SET `name`='管理员2',`status`='0' WHERE `id` = 2 [ RunTime:0.0005s ]
+
+[ 2020-02-15T20:58:20+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004112s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000050s ]
+
+[ 2020-02-15T20:58:20+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_admin_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `jx_admin_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_admin_user` LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_admin_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:58:23+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+SQL: SHOW COLUMNS FROM `jx_admin_user` [ RunTime:0.0010s ]
+SQL: UPDATE `jx_admin_user` SET `name`='管理员2',`status`='0' WHERE `id` = 2 [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:59:53+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `jx_admin_user` [ RunTime:0.0010s ]
+SQL: UPDATE `jx_admin_user` SET `name`='许铭聪',`status`='1' WHERE `id` = 1 [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:59:55+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000035s ]
+
+[ 2020-02-15T20:59:55+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T20:59:58+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000122s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0009s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='1',`sex`='1',`tel`='15622222221',`balance`='6666' WHERE `id` = 1 [ RunTime:0.0002s ]
+
+[ 2020-02-15T21:00:05+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0009s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='1',`sex`='2',`tel`='15622222221',`balance`='6666' WHERE `id` = 1 [ RunTime:0.0009s ]
+
+[ 2020-02-15T21:00:08+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000045s ]
+
+[ 2020-02-15T21:00:08+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T21:00:12+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/edit_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0009s ]
+SQL: UPDATE `jx_user` SET `name`='许铭聪',`status`='1',`sex`='1',`tel`='15622222221',`balance`='6666' WHERE `id` = 1 [ RunTime:0.0010s ]
+
+[ 2020-02-15T21:04:39+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008189s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2020-02-15T21:04:39+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_admin_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `jx_admin_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `jx_admin_user` LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_admin_user` LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-02-15T21:04:40+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000030s ]
+
+[ 2020-02-15T21:04:40+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2020-02-15T21:04:46+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000044s ]
+
+[ 2020-02-15T21:04:46+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_admin_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `jx_admin_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_admin_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_admin_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-15T21:04:57+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 19 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 23 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 29 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 32 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 54 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 58 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 64 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 67 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000042s ]
+
+[ 2020-02-15T21:04:57+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jx_user` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0003s ]
+
