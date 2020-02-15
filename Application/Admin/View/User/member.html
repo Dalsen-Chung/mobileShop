@@ -1,5 +1,78 @@
 <include file="Public/header" />
-<div class="layui-body">
-  <div style="padding: 15px;">会员用户</div>
+<div class="user-admin" style="padding: 15px;">
+  <div class="layui-card">
+    <div class="layui-card-header">
+      <span>会员用户</span>
+    </div>
+    <div class="layui-card-body">
+      <table id="memberList" lay-filter="memberTb"></table>
+      <script type="text/html" id="memberBar">
+        <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+      </script>
+      <script type="text/html" id="avatarTpl">
+        <img src="__AVATAR__{{d.avatar}}" style="width: 50px;" />
+      </script>
+    </div>
+  </div>
 </div>
 <include file="Public/footer" />
+
+<!-- 编辑会员员表单 -->
+<form class="layui-form" id="editAdminUser" lay-filter="editAdminUser" style="display: none; padding: 30px;">
+  <div class="layui-form-item">
+    <label class="layui-form-label">用户名</label>
+    <div class="layui-input-block">
+      <input type="text" name="name" placeholder="请输入" required lay-verify="required" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">状态</label>
+    <div class="layui-input-block">
+      <input type="radio" name="status" value="0" title="禁用">
+      <input type="radio" name="status" value="1" title="正常">
+    </div>
+  </div>
+  <input type="hidden" name="id" autocomplete="off" class="layui-input">
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="adminEditSave">保存</button>
+    </div>
+  </div>
+</form>
+
+<!-- 添加管理员表单 -->
+<form class="layui-form" id="addAdminUser" lay-filter="addAdminUser" style="display: none; padding: 30px;">
+  <div class="layui-form-item">
+    <label class="layui-form-label">账号</label>
+    <div class="layui-input-block">
+      <input type="text" name="account" placeholder="请输入" required lay-verify="required" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">用户名</label>
+    <div class="layui-input-block">
+      <input type="text" name="name" placeholder="请输入" required lay-verify="required" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">密码</label>
+    <div class="layui-input-block">
+      <input type="password" name="password" placeholder="请输入" required lay-verify="required" autocomplete="off"
+        class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">状态</label>
+    <div class="layui-input-block">
+      <input type="radio" name="status" value="1" title="正常" required checked>
+      <input type="radio" name="status" value="0" title="禁用"  required>
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="addAddSave">保存</button>
+      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+    </div>
+  </div>
+</form>

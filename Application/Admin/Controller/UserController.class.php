@@ -54,4 +54,22 @@ class UserController extends AdminBaseController {
         $res = $admin_user->add($data);
         $this->ajaxReturn($res);
     }
+
+    public function get_user_list() {  //  查询会员用户列表
+        $page = I('page');
+        $limit = I('limit');
+        $start = ($page - 1) * $limit;
+        $user = M('user');  //..实例化user模型
+        $user_list = $user->limit($start, $limit)->select();
+        foreach ($user_list as $key => $value) {
+            $user_list[$key]['status'] = $value['status'] == 1 ? '正常' : '禁用';
+            $user_list[$key]['balance'] = number_format(($value['balance']/100),2);
+            $user_list[$key]['sex'] = $value['sex'] == 1 ? '男' : '女';
+            $user_list[$key]['addtime'] =  date('Y-m-d H:i:s', $value['addtime']);
+        }
+        $res['code'] = 0;
+        $res['data'] = $user_list;
+        $res['count'] = $user->count();
+        $this->ajaxReturn($res);
+    }
 }

@@ -13,3 +13,6 @@
   align-items: center;
   justify-content: space-between;
 }
+.layui-table-cell {
+  height: auto !important;
+ }

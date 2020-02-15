@@ -77,7 +77,7 @@
     <div class="layui-card-header">
       <span>管理员用户</span>
       <button type="button" id="addAdminBtn" class="layui-btn layui-btn-sm">
-        <i class="layui-icon">&#xe608;</i> 添加用户
+        <i class="layui-icon">&#xe608;</i> 添加管理员
       </button>
     </div>
     <div class="layui-card-body">
