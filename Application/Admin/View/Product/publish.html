@@ -1,5 +1,105 @@
 <include file="Public/header" />
-<div class="layui-body">
-  <div style="padding: 15px;">发布商品</div>
+<div class="product-publish" style="padding: 15px;">
+  <div class="layui-card">
+    <div class="layui-card-header">
+      <span>发布商品</span>
+    </div>
+    <div class="layui-card-body">
+      <form class="layui-form" style="width: 550px;">
+        <div class="layui-form-item">
+          <label class="layui-form-label">商品名称</label>
+          <div class="layui-input-block">
+            <input type="text" name="name" placeholder="请输入" lay-verify="required" autocomplete="off" class="layui-input">
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <label class="layui-form-label">商品封面</label>
+          <div class="layui-input-block">
+            <img src="" id="pd_cover_img" width="80" style="display: none;">
+            <button type="button" class="layui-btn layui-btn-normal uploadBtn" id="pd_cover_btn">
+              <i class="layui-icon">&#xe67c;</i>上传单张封面
+            </button>
+            <input type="hidden" name="photo" id="pd_cover" lay-verify="required" lay-reqText="请上传封面"  class="layui-input">
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <label class="layui-form-label">商品单价(¥)</label>
+          <div class="layui-input-block">
+            <input type="number" name="price" placeholder="请输入价格" lay-verify="required|number" autocomplete="off" class="layui-input">
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <label class="layui-form-label">库存量(台)</label>
+          <div class="layui-input-block">
+            <input type="number" name="stock" placeholder="请输入数量" lay-verify="required|number" autocomplete="off" class="layui-input">
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <label class="layui-form-label">商品品牌</label>
+          <div class="layui-input-block">
+            <select name="bid" lay-verify="required">
+              <option value="">请选择品牌</option>
+              <volist name="b_list" id="vo">
+                <option value="{$vo.id}">{$vo.name}</option>
+              </volist>
+            </select>
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <label class="layui-form-label">商品分类</label>
+          <div class="layui-input-block">
+            <select name="cid" lay-verify="required">
+              <option value="">请选择分类</option>
+              <volist name="c_list" id="vo">
+                <option value="{$vo.id}">{$vo.name}</option>
+              </volist>
+            </select>
+          </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+          <label class="layui-form-label">广告语</label>
+          <div class="layui-input-block">
+            <textarea placeholder="请输入" name="intro" lay-verify="required" class="layui-textarea"></textarea>
+          </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+          <label class="layui-form-label">商品详情</label>
+          <div class="layui-input-block">
+            <textarea placeholder="请输入" name="content" lay-verify="required" class="layui-textarea"></textarea>
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <label class="layui-form-label">详情图片</label>
+          <div class="layui-input-block">
+            <div class="upload_img_list"></div>
+            <button type="button" class="layui-btn layui-btn-warm uploadBtn" id="pd_imgs_btn">
+              <i class="layui-icon">&#xe67c;</i>上传多张图片
+            </button>
+            <input type="hidden" name="photo_list" id="pd_imgs" lay-verify="required" lay-reqText="请上传详情图片"  class="layui-input">
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <label class="layui-form-label">上架状态</label>
+          <div class="layui-input-block">
+            <input type="radio" name="status" value="1" title="上架" checked>
+            <input type="radio" name="status" value="0" title="下架">
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <label class="layui-form-label">是否热卖</label>
+          <div class="layui-input-block">
+            <input type="checkbox" name="is_hot" value="1" lay-skin="switch" lay-text="是|否">
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="*">立即发布</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+          </div>
+        </div>
+        <!-- 更多表单结构排版请移步文档左侧【页面元素-表单】一项阅览 -->
+      </form>
+    </div>
+  </div>
 </div>
 <include file="Public/footer" />

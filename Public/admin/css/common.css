@@ -9,7 +9,12 @@
 
 /* 公共样式 */
 .uploadBtn {
+  display: block;
   margin-top: 5px;
+}
+.upload_img_list img {
+  width: 50px;
+  margin-right: 10px;
 }
 
 /* layui css 重置 */

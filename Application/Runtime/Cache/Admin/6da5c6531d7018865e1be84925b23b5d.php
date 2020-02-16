@@ -104,6 +104,7 @@
     <script src="/mobileShop/Public/admin/js/brand.js"></script>
     <script src="/mobileShop/Public/admin/js/classify.js"></script>
     <script src="/mobileShop/Public/admin/js/member.js"></script>
+    <script src="/mobileShop/Public/admin/js/publish.js"></script>
     <script src="/mobileShop/Public/admin/js/admin_user.js"></script>
 </body>
 
@@ -158,7 +159,7 @@
   <div class="layui-form-item">
     <label class="layui-form-label">分类图标</label>
     <div class="layui-input-block">
-      <img src="" id="add_classify_icon" width="80">
+      <img src="" id="add_classify_icon" width="80" style="display: none;">
       <button type="button" class="layui-btn layui-btn-normal uploadBtn" id="addClassifyIconUpload">
         <i class="layui-icon">&#xe67c;</i>上传图标
       </button>

@@ -163,6 +163,7 @@ layui.use(['table','form', 'upload'], function () {
             if (code === 0) {
                 const fullPath = res.data.savepath + res.data.savename
                 $("#add_brand_icon")[0].src = UPLOAD_URL + fullPath
+                $("#add_brand_icon").show()
                 $("#add_icon_path").val(fullPath)
                 layer.msg('图标上传成功，点击保存后生效');
             } else {

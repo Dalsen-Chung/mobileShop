@@ -3,8 +3,37 @@ namespace Admin\Controller;
 use Common\Controller\AdminBaseController;
 class ProductController extends AdminBaseController {
 
-  public function issue_product () {
+  public function publish () {  //  渲染发布商品页面
+    $category = M('category');  //..实例化category模型
+    $brand = M('brand');  //..实例化product模型
+    $c_list = $category->order('addtime desc')->select();
+    $b_list = $brand->order('addtime desc')->select();
+    
+    $this->assign('c_list',$c_list);
+    $this->assign('b_list',$b_list);
+    $this->display();
+  }
 
+  public function upload_pd_img () {  //  上传单张商品封面图
+    $upload = new \Think\Upload();// 实例化上传类
+    $upload->maxSize   =     5242880 ;// 设置附件上传大小 5m
+    $upload->exts      =     array('jpg', 'png', 'jpeg');// 设置附件上传类型
+    $upload->rootPath  =     './Uploads/'; // 设置附件上传根目录
+    $upload->savePath  =     'images/cover/'; // 设置附件上传（子）目录
+    $upload->saveName  =     array('uniqid','');
+
+    // 上传单个文件 
+    $info   =   $upload->uploadOne($_FILES['pd_cover']);
+    if(!$info) {// 上传错误提示错误信息
+      $res['code'] = -1;
+      $res['msg'] = $upload->getError();
+      $res['data'] = array();
+    }else{// 上传成功
+      $res['code'] = 0;
+      $res['msg'] = '上传成功';
+      $res['data'] = $info;
+    }
+    $this->ajaxReturn($res);
   }
 
   public function get_product_list() {  //  查询商品列表
