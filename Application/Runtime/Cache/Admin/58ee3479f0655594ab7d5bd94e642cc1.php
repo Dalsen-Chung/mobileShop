@@ -72,7 +72,7 @@
     </div>
 </div>
         <div class="layui-body main-content">
-<div class="user-admin" style="padding: 15px;">
+<div class="user-member" style="padding: 15px;">
   <div class="layui-card">
     <div class="layui-card-header">
       <span>会员用户</span>
@@ -97,6 +97,9 @@
     <script src="/mobileShop/Public/home/js/jquery-3.4.1.min.js"></script>
     <script src="/mobileShop/Public/admin/layui.js"></script>
     <script src="/mobileShop/Public/admin/js/common.js"></script>
+    <script src="/mobileShop/Public/admin/js/brand.js"></script>
+    <script src="/mobileShop/Public/admin/js/member.js"></script>
+    <script src="/mobileShop/Public/admin/js/admin_user.js"></script>
 </body>
 
 </html>

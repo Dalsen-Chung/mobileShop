@@ -17,6 +17,7 @@ return array(
 	//模板路径解析配置
 	'TMPL_PARSE_STRING'  => array(
 		'__UPLOAD__' => '/mobileShop/Uploads', // 增加新的上传路径替换规则
-		'__AVATAR__' => '/mobileShop/Uploads/images/avatar/', // 增加新的上传路径替换规则
+		'__AVATAR__' => '/mobileShop/Uploads/images/avatar/',
+		'__BRAND__' => '/mobileShop/Uploads/images/brand/',
    	)
 );

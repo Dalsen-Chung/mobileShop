@@ -99,6 +99,9 @@
     <script src="/mobileShop/Public/home/js/jquery-3.4.1.min.js"></script>
     <script src="/mobileShop/Public/admin/layui.js"></script>
     <script src="/mobileShop/Public/admin/js/common.js"></script>
+    <script src="/mobileShop/Public/admin/js/brand.js"></script>
+    <script src="/mobileShop/Public/admin/js/member.js"></script>
+    <script src="/mobileShop/Public/admin/js/admin_user.js"></script>
 </body>
 
 </html>
@@ -109,6 +112,12 @@
     <label class="layui-form-label">用户名</label>
     <div class="layui-input-block">
       <input type="text" name="name" placeholder="请输入" required lay-verify="required" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">新密码</label>
+    <div class="layui-input-block">
+      <input type="password" name="password" placeholder="请输入(不修改则不填)" autocomplete="off" class="layui-input">
     </div>
   </div>
   <div class="layui-form-item">

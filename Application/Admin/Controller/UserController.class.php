@@ -31,10 +31,15 @@ class UserController extends AdminBaseController {
         $id = I('id');
         $name = I('name');
         $status = I('status');
+        $password = I('password');
+
         $admin_user = M('admin_user');  //..实例化admin_user模型
         $where['id'] = $id;
         $data['name'] = $name;
         $data['status'] = $status;
+        if ($password != "") {
+            $data['password'] = md5($password);
+        }
         $res = $admin_user->where($where)->save($data);
         $this->ajaxReturn($res);
     }
