@@ -1,0 +1,42 @@
+[ 2020-02-16T14:42:52+08:00 ] 127.0.0.1 /mobileShop/Uploads/brand.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
+ERR: 无法加载模块:Uploads
+
+[ 2020-02-16T14:42:58+08:00 ] 127.0.0.1 /mobileShop/Uploads/brand.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+ERR: 无法加载模块:Uploads
+
+[ 2020-02-16T14:45:35+08:00 ] 127.0.0.1 /mobileShop/Uploads/brand.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
+ERR: 无法加载模块:Uploads
+
+[ 2020-02-16T14:45:36+08:00 ] 127.0.0.1 /mobileShop/Uploads/brand.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+ERR: 无法加载模块:Uploads
+
+[ 2020-02-16T14:49:57+08:00 ] 127.0.0.1 /mobileShop/Uploads/brand.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+ERR: 无法加载模块:Uploads
+
+[ 2020-02-16T14:49:59+08:00 ] 127.0.0.1 /mobileShop/Uploads/brand.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+ERR: 无法加载模块:Uploads
+
+[ 2020-02-16T14:50:07+08:00 ] 127.0.0.1 /mobileShop/Uploads//mobileShop/Uploads/images/brand/2020-02-16/5e48e61b27ea0.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
+ERR: 无法加载模块:Uploads
+

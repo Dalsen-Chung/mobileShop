@@ -6,6 +6,12 @@
 .footer {
   background-color: #fff !important;
 }
+
+/* 品牌管理页面 */
+#editIconUpload, #addIconUpload {
+  margin-top: 5px;
+}
+
 /* layui css 重置 */
 .layui-card > .layui-card-header {
   display: flex;

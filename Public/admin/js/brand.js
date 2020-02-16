@@ -57,6 +57,7 @@ layui.use(['table','form', 'upload'], function () {
                 "name": data.name // "name": "value"
                 , "icon": data.icon
             });
+            $("#brandIcon")[0].src = UPLOAD_URL + data.icon;
             layer.open({
                 type: 1,
                 title: '编辑品牌',
@@ -65,7 +66,7 @@ layui.use(['table','form', 'upload'], function () {
             form.on('submit(brandEditSave)', function (data) {
                 var submitData = data.field //当前容器的全部表单字段，名值对形式：{name: value}
                 $.ajax({
-                    url: "edit_admin",
+                    url: "edit_brand",
                     data: submitData,
                     type: "Post",
                     dataType: "json",
@@ -73,7 +74,7 @@ layui.use(['table','form', 'upload'], function () {
                         if (data !== false) {
                             obj.update({
                                 name: submitData.name
-                                , status: submitData.status == '1' ? '正常' : '禁用'
+                                , icon: submitData.icon
                             });
                             layer.closeAll('page'); //关闭所有页面层
                             layer.msg('编辑成功');
@@ -90,21 +91,20 @@ layui.use(['table','form', 'upload'], function () {
         }
     });
 
-    //监听添加管理员用户的按钮
-    $('#addAdminBtn').click(function () {
+    //监听添加品牌的按钮
+    $('#addBrandBtn').click(function () {
         layer.open({    //打开添加表单
             type: 1,
-            title: '添加管理员',
-            content: $('#addAdminUser')
+            title: '添加商品品牌',
+            content: $('#addProductBrand')
         })
     });
 
-    //监听添加管理员的表单提交事件
-    form.on('submit(addAddSave)', function (data) {
+    //监听添加品牌的表单提交事件
+    form.on('submit(brandAddSave)', function (data) {
         var submitData = data.field //当前容器的全部表单字段，名值对形式：{name: value}
-        console.log(submitData)
         $.ajax({
-            url: "add_admin",
+            url: "add_brand",
             data: submitData,
             type: "Post",
             dataType: "json",
@@ -124,5 +124,53 @@ layui.use(['table','form', 'upload'], function () {
             }
         });
         return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。
+    });
+     
+    //  修改品牌图标
+    upload.render({
+        elem: '#editIconUpload' //绑定元素
+        ,url: 'upload_brand_icon' //上传接口
+        ,accept: 'images'
+        ,size: 5120
+        ,acceptMime: 'image/jpg, image/png'
+        ,field: 'brand_icon'
+        ,done: function(res){
+            let code = res.code;
+            if (code === 0) {
+                const fullPath = res.data.savepath + res.data.savename
+                $("#brandIcon")[0].src = UPLOAD_URL + fullPath
+                $("#icon_path").val(fullPath)
+                layer.msg('图标上传成功，点击保存后生效');
+            } else {
+                layer.msg(`图标上传失败，${res.msg}`);
+            }
+        }
+        ,error: function(){
+            layer.msg('图标上传失败');
+        }
+    });
+
+    //  添加品牌图标
+    upload.render({
+        elem: '#addIconUpload' //绑定元素
+        ,url: 'upload_brand_icon' //上传接口
+        ,accept: 'images'
+        ,size: 5120
+        ,acceptMime: 'image/jpg, image/png'
+        ,field: 'brand_icon'
+        ,done: function(res){
+            let code = res.code;
+            if (code === 0) {
+                const fullPath = res.data.savepath + res.data.savename
+                $("#add_brand_icon")[0].src = UPLOAD_URL + fullPath
+                $("#add_icon_path").val(fullPath)
+                layer.msg('图标上传成功，点击保存后生效');
+            } else {
+                layer.msg(`图标上传失败，${res.msg}`);
+            }
+        }
+        ,error: function(){
+            layer.msg('图标上传失败');
+        }
     });
 });

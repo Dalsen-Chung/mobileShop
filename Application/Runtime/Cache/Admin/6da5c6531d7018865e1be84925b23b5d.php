@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/mobileShop/Public/admin/css/common.css">
     <script>
       const USER_ID = '<?php echo (session('user_id')); ?>';
+      const UPLOAD_URL = '/mobileShop/Uploads/';
     </script>
 </head>
 <body class="layui-layout-body">

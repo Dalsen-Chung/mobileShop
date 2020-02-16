@@ -14,7 +14,7 @@
         <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
       </script>
       <script type="text/html" id="brandTpl">
-        <img src="__BRAND__{{d.icon}}" style="width: 50px;" />
+        <img src="__UPLOAD__{{d.icon}}" style="width: 50px;" />
       </script>
     </div>
   </div>
@@ -32,7 +32,11 @@
   <div class="layui-form-item">
     <label class="layui-form-label">品牌图标</label>
     <div class="layui-input-block">
-      <input type="text" name="icon" placeholder="请上传" autocomplete="off" class="layui-input">
+      <img src="" id="brandIcon" width="80">
+      <button type="button" class="layui-btn layui-btn-normal" id="editIconUpload">
+        <i class="layui-icon">&#xe67c;</i>上传图标
+      </button>
+      <input type="hidden" name="icon" id="icon_path" placeholder="请上传" autocomplete="off" class="layui-input">
     </div>
   </div>
   <input type="hidden" name="id" autocomplete="off" class="layui-input">
@@ -46,29 +50,19 @@
 <!-- 添加商品品牌表单 -->
 <form class="layui-form" id="addProductBrand" lay-filter="addProductBrand" style="display: none; padding: 30px;">
   <div class="layui-form-item">
-    <label class="layui-form-label">账号</label>
-    <div class="layui-input-block">
-      <input type="text" name="account" placeholder="请输入" required lay-verify="required" autocomplete="off" class="layui-input">
-    </div>
-  </div>
-  <div class="layui-form-item">
-    <label class="layui-form-label">用户名</label>
+    <label class="layui-form-label">品牌名称</label>
     <div class="layui-input-block">
       <input type="text" name="name" placeholder="请输入" required lay-verify="required" autocomplete="off" class="layui-input">
     </div>
   </div>
   <div class="layui-form-item">
-    <label class="layui-form-label">密码</label>
+    <label class="layui-form-label">品牌图标</label>
     <div class="layui-input-block">
-      <input type="password" name="password" placeholder="请输入" required lay-verify="required" autocomplete="off"
-        class="layui-input">
-    </div>
-  </div>
-  <div class="layui-form-item">
-    <label class="layui-form-label">状态</label>
-    <div class="layui-input-block">
-      <input type="radio" name="status" value="1" title="正常" required checked>
-      <input type="radio" name="status" value="0" title="禁用"  required>
+      <img src="" id="add_brand_icon" width="80">
+      <button type="button" class="layui-btn layui-btn-normal" id="addIconUpload">
+        <i class="layui-icon">&#xe67c;</i>上传图标
+      </button>
+      <input type="hidden" name="icon" id="add_icon_path" required lay-verify="required" lay-reqText="请上传图标"  class="layui-input">
     </div>
   </div>
   <div class="layui-form-item">
