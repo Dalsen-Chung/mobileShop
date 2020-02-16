@@ -8,7 +8,7 @@ class UserController extends AdminBaseController {
         $limit = I('limit');
         $start = ($page - 1) * $limit;
         $admin_user = M('admin_user');  //..实例化admin_user模型
-        $user_list = $admin_user->limit($start, $limit)->select();
+        $user_list = $admin_user->limit($start, $limit)->order('addtime desc')->select();
         foreach ($user_list as $key => $value) {
             $user_list[$key]['status'] = $value['status'] == 1 ? '正常' : '禁用';
             $user_list[$key]['addtime'] =  date('Y-m-d H:i:s', $value['addtime']);
@@ -65,7 +65,7 @@ class UserController extends AdminBaseController {
         $limit = I('limit');
         $start = ($page - 1) * $limit;
         $user = M('user');  //..实例化user模型
-        $user_list = $user->limit($start, $limit)->select();
+        $user_list = $user->limit($start, $limit)->order('addtime desc')->select();
         foreach ($user_list as $key => $value) {
             $user_list[$key]['status'] = $value['status'] == 1 ? '正常' : '禁用';
             $user_list[$key]['balance'] = number_format(($value['balance']/100),2);

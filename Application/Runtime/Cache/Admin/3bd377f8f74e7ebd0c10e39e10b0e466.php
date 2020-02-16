@@ -102,6 +102,7 @@
     <script src="/mobileShop/Public/admin/layui.js"></script>
     <script src="/mobileShop/Public/admin/js/common.js"></script>
     <script src="/mobileShop/Public/admin/js/brand.js"></script>
+    <script src="/mobileShop/Public/admin/js/classify.js"></script>
     <script src="/mobileShop/Public/admin/js/member.js"></script>
     <script src="/mobileShop/Public/admin/js/admin_user.js"></script>
 </body>
@@ -120,7 +121,7 @@
     <label class="layui-form-label">品牌图标</label>
     <div class="layui-input-block">
       <img src="" id="brandIcon" width="80">
-      <button type="button" class="layui-btn layui-btn-normal" id="editIconUpload">
+      <button type="button" class="layui-btn layui-btn-normal uploadBtn" id="editIconUpload">
         <i class="layui-icon">&#xe67c;</i>上传图标
       </button>
       <input type="hidden" name="icon" id="icon_path" placeholder="请上传" autocomplete="off" class="layui-input">
@@ -146,7 +147,7 @@
     <label class="layui-form-label">品牌图标</label>
     <div class="layui-input-block">
       <img src="" id="add_brand_icon" width="80">
-      <button type="button" class="layui-btn layui-btn-normal" id="addIconUpload">
+      <button type="button" class="layui-btn layui-btn-normal uploadBtn" id="addIconUpload">
         <i class="layui-icon">&#xe67c;</i>上传图标
       </button>
       <input type="hidden" name="icon" id="add_icon_path" required lay-verify="required" lay-reqText="请上传图标"  class="layui-input">

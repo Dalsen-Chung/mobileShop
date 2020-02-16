@@ -1,5 +1,86 @@
 <include file="Public/header" />
-<div class="layui-body">
-  <div style="padding: 15px;">商品分类</div>
+<div class="product-classify" style="padding: 15px;">
+  <div class="layui-card">
+    <div class="layui-card-header">
+      <span>商品分类</span>
+      <button type="button" id="addClassifyBtn" class="layui-btn layui-btn-sm">
+        <i class="layui-icon">&#xe608;</i> 添加商品
+      </button>
+    </div>
+    <div class="layui-card-body">
+      <table id="classifyList" lay-filter="productClassifyTb"></table>
+      <script type="text/html" id="classifyBar">
+        <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+      </script>
+      <script type="text/html" id="classifyTpl">
+        <img src="__UPLOAD__{{d.icon}}" style="width: 50px;" />
+      </script>
+    </div>
+  </div>
 </div>
 <include file="Public/footer" />
+
+<!-- 编辑商品分类表单 -->
+<form class="layui-form" id="editProductClassify" lay-filter="editProductClassify" style="display: none; padding: 30px;">
+  <div class="layui-form-item">
+    <label class="layui-form-label">分类名称</label>
+    <div class="layui-input-block">
+      <input type="text" name="name" placeholder="请输入" required lay-verify="required" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">分类简介</label>
+    <div class="layui-input-block">
+      <textarea name="introduction" placeholder="请输入简介" required lay-verify="required" class="layui-textarea"></textarea>
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">分类图标</label>
+    <div class="layui-input-block">
+      <img src="" id="edit_classify_icon" width="80">
+      <button type="button" class="layui-btn layui-btn-normal uploadBtn" id="editClassifyIconUpload">
+        <i class="layui-icon">&#xe67c;</i>上传图标
+      </button>
+      <input type="hidden" name="icon" id="edit_classify_icon_path" placeholder="请上传" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+  <input type="hidden" name="id" autocomplete="off" class="layui-input">
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="classifyEditSave">保存</button>
+    </div>
+  </div>
+</form>
+
+<!-- 添加商品分类表单 -->
+<form class="layui-form" id="addProductClassify" lay-filter="addProductClassify" style="display: none; padding: 30px;">
+  <div class="layui-form-item">
+    <label class="layui-form-label">分类名称</label>
+    <div class="layui-input-block">
+      <input type="text" name="name" placeholder="请输入" required lay-verify="required" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">分类简介</label>
+    <div class="layui-input-block">
+      <textarea name="introduction" placeholder="请输入简介" required lay-verify="required" class="layui-textarea"></textarea>
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">分类图标</label>
+    <div class="layui-input-block">
+      <img src="" id="add_classify_icon" width="80">
+      <button type="button" class="layui-btn layui-btn-normal uploadBtn" id="addClassifyIconUpload">
+        <i class="layui-icon">&#xe67c;</i>上传图标
+      </button>
+      <input type="hidden" name="icon" id="add_classify_icon_path" required lay-verify="required" lay-reqText="请上传图标"  class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="classifyAddSave">保存</button>
+      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+    </div>
+  </div>
+</form>

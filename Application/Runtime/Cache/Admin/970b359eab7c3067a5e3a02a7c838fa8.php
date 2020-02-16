@@ -101,6 +101,7 @@
     <script src="/mobileShop/Public/admin/layui.js"></script>
     <script src="/mobileShop/Public/admin/js/common.js"></script>
     <script src="/mobileShop/Public/admin/js/brand.js"></script>
+    <script src="/mobileShop/Public/admin/js/classify.js"></script>
     <script src="/mobileShop/Public/admin/js/member.js"></script>
     <script src="/mobileShop/Public/admin/js/admin_user.js"></script>
 </body>

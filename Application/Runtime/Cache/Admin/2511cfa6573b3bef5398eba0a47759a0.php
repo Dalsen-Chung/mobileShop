@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/mobileShop/Public/admin/css/common.css">
     <script>
       const USER_ID = '<?php echo (session('user_id')); ?>';
+      const UPLOAD_URL = '/mobileShop/Uploads/';
     </script>
 </head>
 <body class="layui-layout-body">
@@ -84,6 +85,7 @@
     <script src="/mobileShop/Public/admin/layui.js"></script>
     <script src="/mobileShop/Public/admin/js/common.js"></script>
     <script src="/mobileShop/Public/admin/js/brand.js"></script>
+    <script src="/mobileShop/Public/admin/js/classify.js"></script>
     <script src="/mobileShop/Public/admin/js/member.js"></script>
     <script src="/mobileShop/Public/admin/js/admin_user.js"></script>
 </body>

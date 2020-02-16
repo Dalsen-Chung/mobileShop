@@ -7,8 +7,8 @@
   background-color: #fff !important;
 }
 
-/* 品牌管理页面 */
-#editIconUpload, #addIconUpload {
+/* 公共样式 */
+.uploadBtn {
   margin-top: 5px;
 }
 
