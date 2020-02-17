@@ -37,7 +37,6 @@ layui.use(['form', 'upload'], function(){
         ,field: 'pd_cover'
         ,multiple: true
         ,done: function(res){
-            console.log(res)
             let code = res.code;
             if (code === 0) {
                 const fullPath = res.data.savepath + res.data.savename
@@ -49,7 +48,6 @@ layui.use(['form', 'upload'], function(){
         }
         ,allDone: function(obj){
             if (obj.successful === obj.total) {
-                console.log($("#pd_imgs").val())
                 layer.msg('封面上传成功，发布后生效');
             }
         }
@@ -61,6 +59,7 @@ layui.use(['form', 'upload'], function(){
     //监听发布商品的表单提交事件
     form.on('submit(publishPd)', function (data) {
         var submitData = data.field //当前容器的全部表单字段，名值对形式：{name: value}
+        submitData.photo_list = submitData.photo_list.replace(/,$/gi,"");
         $.ajax({
             url: "do_publish",
             data: submitData,

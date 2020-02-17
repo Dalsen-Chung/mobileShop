@@ -12,9 +12,12 @@
   display: block;
   margin-top: 5px;
 }
-.upload_img_list img {
+.upload_img_list img, .pd_edit_img_list img {
   width: 50px;
   margin-right: 10px;
+}
+.pd_edit_img_list {
+  margin-bottom: 10px;
 }
 
 /* layui css 重置 */

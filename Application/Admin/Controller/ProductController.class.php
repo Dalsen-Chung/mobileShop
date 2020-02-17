@@ -75,8 +75,15 @@ class ProductController extends AdminBaseController {
     $start = ($page - 1) * $limit;
     $product = M('product');  //..实例化product模型
     $product_list = $product->limit($start, $limit)->order('addtime desc')->select();
+    $brand = M('brand');
+    $category = M('category');
     foreach ($product_list as $key => $value) {
-      $product_list[$key]['status'] = $value['status'] == 1 ? '正常' : '禁用';
+      $brand_where['id'] = $value['brand_id'];
+      $category_where['id'] = $value['cid'];
+
+      $product_list[$key]['category_name'] = $category->where($category_where)->getField('name');
+      $product_list[$key]['brand_name']  = $brand->where($brand_where)->getField('name');
+      $product_list[$key]['status'] = $value['status'] == 1 ? '上架' : '下架';
       $product_list[$key]['is_hot'] = $value['is_hot'] == 1 ? '是' : '否';
       $product_list[$key]['addtime'] =  date('Y-m-d H:i:s', $value['addtime']);
       $product_list[$key]['updatetime'] =  date('Y-m-d H:i:s', $value['updatetime']);
@@ -84,6 +91,36 @@ class ProductController extends AdminBaseController {
     $res['code'] = 0;
     $res['data'] = $product_list;
     $res['count'] = $product->count();
+    $this->ajaxReturn($res);
+  }
+
+  public function delete_pd() {    //  删除商品
+    $id = I('pd_id');
+    $product = M('product');  //..实例化product模型
+    $data['id'] = $id;
+    $res = $product->where($data)->delete();
+    $this->ajaxReturn($res);
+  }
+
+  public function edit_pd() {    //  编辑商品
+    $data = array(
+      'name' => I('name'),
+      'photo' => I('photo'),
+      'price' => I('price'),
+      'stock' => I('stock'),
+      'brand_id' => I('brand_id'),
+      'cid' => I('cid'),
+      'intro' => I('intro'),
+      'content' => I('content'),
+      'photo_list' => I('photo_list'),
+      'status' => I('status'),
+      'is_hot' => I('is_hot'),
+      'updatetime' => time()
+    );
+
+    $product = M('product');
+    $where['id'] = I('id');
+    $res = $product->where($where)->save($data);
     $this->ajaxReturn($res);
   }
 

@@ -158,7 +158,8 @@
         <div class="layui-form-item">
           <label class="layui-form-label">是否热卖</label>
           <div class="layui-input-block">
-            <input type="checkbox" name="is_hot" value="1" lay-skin="switch" lay-text="是|否">
+            <input type="radio" name="is_hot" value="1" title="是" checked>
+            <input type="radio" name="is_hot" value="0" title="否">
           </div>
         </div>
         <div class="layui-form-item">
@@ -183,6 +184,7 @@
     <script src="/mobileShop/Public/admin/js/classify.js"></script>
     <script src="/mobileShop/Public/admin/js/member.js"></script>
     <script src="/mobileShop/Public/admin/js/publish.js"></script>
+    <script src="/mobileShop/Public/admin/js/pdlist.js"></script>
     <script src="/mobileShop/Public/admin/js/admin_user.js"></script>
 </body>
 
