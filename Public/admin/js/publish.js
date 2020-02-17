@@ -8,7 +8,7 @@ layui.use(['form', 'upload'], function(){
         ,url: 'upload_pd_img' //上传接口
         ,accept: 'images'
         ,size: 5120
-        ,acceptMime: 'image/jpg, image/png'
+        ,acceptMime: 'image/jpeg, image/png'
         ,field: 'pd_cover'
         ,done: function(res){
             let code = res.code;
@@ -33,7 +33,7 @@ layui.use(['form', 'upload'], function(){
         ,url: 'upload_pd_img' //上传接口
         ,accept: 'images'
         ,size: 5120
-        ,acceptMime: 'image/jpg, image/png'
+        ,acceptMime: 'image/jpeg, image/png'
         ,field: 'pd_cover'
         ,multiple: true
         ,done: function(res){
@@ -56,5 +56,32 @@ layui.use(['form', 'upload'], function(){
         ,error: function(){
             layer.msg('商品详情图上传失败');
         }
+    });
+
+    //监听发布商品的表单提交事件
+    form.on('submit(publishPd)', function (data) {
+        var submitData = data.field //当前容器的全部表单字段，名值对形式：{name: value}
+        console.log(submitData);
+        // $.ajax({
+        //     url: "add_brand",
+        //     data: submitData,
+        //     type: "Post",
+        //     dataType: "json",
+        //     success: function (data) {
+        //         if (data) {
+        //             layer.closeAll('page'); //关闭所有页面层
+        //             layer.msg('添加成功');
+        //             setTimeout(() => {
+        //                 location.reload();
+        //             }, 500);
+        //         } else {
+        //             layer.msg('添加失败');
+        //         }
+        //     },
+        //     error: function (data) {
+        //         layer.msg('添加失败');
+        //     }
+        // });
+        return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。
     });
 });

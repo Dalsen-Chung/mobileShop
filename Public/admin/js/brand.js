@@ -132,7 +132,7 @@ layui.use(['table','form', 'upload'], function () {
         ,url: 'upload_brand_icon' //上传接口
         ,accept: 'images'
         ,size: 5120
-        ,acceptMime: 'image/jpg, image/png'
+        ,acceptMime: 'image/jpeg, image/png'
         ,field: 'brand_icon'
         ,done: function(res){
             let code = res.code;
@@ -156,7 +156,7 @@ layui.use(['table','form', 'upload'], function () {
         ,url: 'upload_brand_icon' //上传接口
         ,accept: 'images'
         ,size: 5120
-        ,acceptMime: 'image/jpg, image/png'
+        ,acceptMime: 'image/jpeg, image/png'
         ,field: 'brand_icon'
         ,done: function(res){
             let code = res.code;

@@ -163,11 +163,10 @@
         </div>
         <div class="layui-form-item">
           <div class="layui-input-block">
-            <button class="layui-btn" lay-submit lay-filter="*">立即发布</button>
+            <button class="layui-btn" lay-submit lay-filter="publishPd">立即发布</button>
             <button type="reset" class="layui-btn layui-btn-primary">重置</button>
           </div>
         </div>
-        <!-- 更多表单结构排版请移步文档左侧【页面元素-表单】一项阅览 -->
       </form>
     </div>
   </div>

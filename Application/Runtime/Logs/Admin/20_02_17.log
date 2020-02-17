@@ -1,0 +1,681 @@
+[ 2020-02-17T15:08:12+08:00 ] ::1 /mobileShop/index.php/Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2020-02-17T15:08:12+08:00 ] ::1 /mobileShop/index.php/Admin/Login/get_captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000227s ]
+
+[ 2020-02-17T15:08:18+08:00 ] ::1 /mobileShop/index.php/Admin/Login/get_captcha?0.9447376410742516
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000111s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000172s ]
+
+[ 2020-02-17T15:08:19+08:00 ] ::1 /mobileShop/index.php/Admin/Login/get_captcha?0.9447376410742516?0.6517297119103915
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000174s ]
+
+[ 2020-02-17T15:08:24+08:00 ] ::1 /mobileShop/index.php/Admin/Login/do
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `jx_admin_user` [ RunTime:0.0507s ]
+SQL: SELECT * FROM `jx_admin_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0074s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000132s ]
+
+[ 2020-02-17T15:08:26+08:00 ] ::1 /mobileShop/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 20 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 21 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 24 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 25 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 26 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 27 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 30 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 33 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 34 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 55 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 56 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 59 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 60 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 61 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 62 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 65 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 68 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.252912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.252966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000083s ]
+
+[ 2020-02-17T15:08:28+08:00 ] ::1 /mobileShop/index.php/Admin/Product/publish
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0169s ]
+SQL: SHOW COLUMNS FROM `jx_brand` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `jx_category` ORDER BY addtime desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jx_brand` ORDER BY addtime desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 20 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 21 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 24 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 25 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 26 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 27 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 30 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 33 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 34 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 55 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 56 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 59 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 60 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 61 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 62 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 65 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 68 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2020-02-17T15:08:29+08:00 ] ::1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000246s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 21 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 27 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 30 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 34 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 56 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 62 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 65 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2020-02-17T15:08:30+08:00 ] ::1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000162s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0179s ]
+SQL: SELECT * FROM `jx_user` ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-17T15:08:31+08:00 ] ::1 /mobileShop/index.php/Admin/User/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000213s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 20 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 21 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 24 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 25 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 26 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 27 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 30 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 33 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 34 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 55 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 56 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 59 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 60 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 61 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 62 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 65 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 68 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2020-02-17T15:08:31+08:00 ] ::1 /mobileShop/index.php/Admin/User/get_admin_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000208s ]
+SQL: SHOW COLUMNS FROM `jx_admin_user` [ RunTime:0.0262s ]
+SQL: SELECT * FROM `jx_admin_user` ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_admin_user` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2020-02-17T15:08:33+08:00 ] ::1 /mobileShop/index.php/Admin/User/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 20 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 21 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 24 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 25 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 26 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 27 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 30 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 33 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 34 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 55 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 56 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 59 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 60 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 61 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 62 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 65 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 68 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\58ee3479f0655594ab7d5bd94e642cc1.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005428s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2020-02-17T15:08:34+08:00 ] ::1 /mobileShop/index.php/Admin/User/get_user_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `jx_user` [ RunTime:0.0194s ]
+SQL: SELECT * FROM `jx_user` ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_user` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2020-02-17T15:08:35+08:00 ] ::1 /mobileShop/index.php/Admin/User/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000225s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 20 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 21 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 24 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 25 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 26 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 27 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 30 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 33 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 34 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 55 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 56 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 59 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 60 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 61 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 62 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 65 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 68 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\970b359eab7c3067a5e3a02a7c838fa8.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000098s ]
+
+[ 2020-02-17T15:08:35+08:00 ] ::1 /mobileShop/index.php/Admin/User/get_admin_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000165s ]
+SQL: SHOW COLUMNS FROM `jx_admin_user` [ RunTime:0.0192s ]
+SQL: SELECT * FROM `jx_admin_user` ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_admin_user` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-17T15:08:37+08:00 ] ::1 /mobileShop/index.php/Admin/Product/brand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 20 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 21 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 24 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 25 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 26 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 27 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 30 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 33 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 34 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 55 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 56 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 59 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 60 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 61 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 62 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 65 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 68 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2020-02-17T15:08:37+08:00 ] ::1 /mobileShop/index.php/Admin/Product/get_brand_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+SQL: SHOW COLUMNS FROM `jx_brand` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `jx_brand` ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_brand` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-17T15:09:34+08:00 ] ::1 /mobileShop/index.php/Admin/Product/upload_brand_icon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Wamp64\www\mobileShop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2020-02-17T15:09:39+08:00 ] ::1 /mobileShop/index.php/Admin/Product/add_brand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000146s ]
+SQL: SHOW COLUMNS FROM `jx_brand` [ RunTime:0.0151s ]
+SQL: INSERT INTO `jx_brand` (`name`,`icon`,`addtime`) VALUES ('小米','images/brand/2020-02-17/5e4a3c2e95771.jpg','1581923379') [ RunTime:0.0498s ]
+
+[ 2020-02-17T15:09:39+08:00 ] ::1 /mobileShop/index.php/Admin/Product/brand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000359s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000241s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 20 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 21 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 24 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 25 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 26 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 27 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 30 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 33 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 34 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 55 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 56 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 59 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 60 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 61 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 62 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 65 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 68 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\3bd377f8f74e7ebd0c10e39e10b0e466.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000149s ]
+
+[ 2020-02-17T15:09:39+08:00 ] ::1 /mobileShop/index.php/Admin/Product/get_brand_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `jx_brand` [ RunTime:0.0173s ]
+SQL: SELECT * FROM `jx_brand` ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_brand` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-17T15:09:51+08:00 ] ::1 /mobileShop/index.php/Admin/Product/classify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000124s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6da5c6531d7018865e1be84925b23b5d.php 第 20 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6da5c6531d7018865e1be84925b23b5d.php 第 21 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6da5c6531d7018865e1be84925b23b5d.php 第 24 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6da5c6531d7018865e1be84925b23b5d.php 第 25 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6da5c6531d7018865e1be84925b23b5d.php 第 26 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6da5c6531d7018865e1be84925b23b5d.php 第 27 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6da5c6531d7018865e1be84925b23b5d.php 第 30 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6da5c6531d7018865e1be84925b23b5d.php 第 33 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6da5c6531d7018865e1be84925b23b5d.php 第 34 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6da5c6531d7018865e1be84925b23b5d.php 第 55 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6da5c6531d7018865e1be84925b23b5d.php 第 56 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6da5c6531d7018865e1be84925b23b5d.php 第 59 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6da5c6531d7018865e1be84925b23b5d.php 第 60 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6da5c6531d7018865e1be84925b23b5d.php 第 61 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6da5c6531d7018865e1be84925b23b5d.php 第 62 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6da5c6531d7018865e1be84925b23b5d.php 第 65 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6da5c6531d7018865e1be84925b23b5d.php 第 68 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6da5c6531d7018865e1be84925b23b5d.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2020-02-17T15:09:51+08:00 ] ::1 /mobileShop/index.php/Admin/Product/get_classify_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000195s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0343s ]
+SQL: SELECT * FROM `jx_category` ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_category` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2020-02-17T15:09:54+08:00 ] ::1 /mobileShop/index.php/Admin/Product/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000242s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\2511cfa6573b3bef5398eba0a47759a0.php 第 20 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\2511cfa6573b3bef5398eba0a47759a0.php 第 21 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\2511cfa6573b3bef5398eba0a47759a0.php 第 24 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\2511cfa6573b3bef5398eba0a47759a0.php 第 25 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\2511cfa6573b3bef5398eba0a47759a0.php 第 26 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\2511cfa6573b3bef5398eba0a47759a0.php 第 27 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\2511cfa6573b3bef5398eba0a47759a0.php 第 30 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\2511cfa6573b3bef5398eba0a47759a0.php 第 33 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\2511cfa6573b3bef5398eba0a47759a0.php 第 34 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\2511cfa6573b3bef5398eba0a47759a0.php 第 55 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\2511cfa6573b3bef5398eba0a47759a0.php 第 56 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\2511cfa6573b3bef5398eba0a47759a0.php 第 59 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\2511cfa6573b3bef5398eba0a47759a0.php 第 60 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\2511cfa6573b3bef5398eba0a47759a0.php 第 61 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\2511cfa6573b3bef5398eba0a47759a0.php 第 62 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\2511cfa6573b3bef5398eba0a47759a0.php 第 65 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\2511cfa6573b3bef5398eba0a47759a0.php 第 68 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\2511cfa6573b3bef5398eba0a47759a0.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008931s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000249s ]
+
+[ 2020-02-17T15:09:55+08:00 ] ::1 /mobileShop/index.php/Admin/Product/publish
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000138s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0169s ]
+SQL: SHOW COLUMNS FROM `jx_brand` [ RunTime:0.0165s ]
+SQL: SELECT * FROM `jx_category` ORDER BY addtime desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_brand` ORDER BY addtime desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 20 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 21 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 24 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 25 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 26 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 27 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 30 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 33 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 34 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 55 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 56 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 59 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 60 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 61 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 62 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 65 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 68 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071040s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000091s ]
+
+[ 2020-02-17T15:21:06+08:00 ] ::1 /mobileShop/index.php/Admin/Product/publish
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000216s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0425s ]
+SQL: SHOW COLUMNS FROM `jx_brand` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `jx_category` ORDER BY addtime desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jx_brand` ORDER BY addtime desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 20 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 21 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 24 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 25 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 26 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 27 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 30 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 33 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 34 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 55 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 56 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 59 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 60 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 61 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 62 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 65 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 68 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000145s ]
+
+[ 2020-02-17T15:30:11+08:00 ] ::1 /mobileShop/index.php/Admin/Product/publish
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `jx_category` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `jx_brand` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `jx_category` ORDER BY addtime desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jx_brand` ORDER BY addtime desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 20 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 21 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 24 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 25 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 26 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 27 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 30 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 33 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 34 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 55 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 56 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 59 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 60 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 61 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 62 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 65 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 68 行.
+NOTIC: [8] Undefined variable: Think D:\Wamp64\www\mobileShop\Application\Runtime\Cache\Admin\6b5ca78d7df3ba55085fbe991a40b1a2.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000207s ]
+
