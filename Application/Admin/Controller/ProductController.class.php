@@ -36,6 +36,28 @@ class ProductController extends AdminBaseController {
     $this->ajaxReturn($res);
   }
 
+  public function do_publish() {  //  发布一件商品
+    $data = array(
+      'name' => I('name'),
+      'photo' => I('photo'),
+      'price' => I('price'),
+      'stock' => I('stock'),
+      'brand_id' => I('bid'),
+      'cid' => I('cid'),
+      'intro' => I('intro'),
+      'content' => I('content'),
+      'photo_list' => I('photo_list'),
+      'status' => I('status'),
+      'is_hot' => I('is_hot'),
+      'updatetime' => time(),
+      'addtime' => time()
+    );
+
+    $product = M('product');  //..实例化product模型
+    $res = $product->add($data);
+    $this->ajaxReturn($res);
+  }
+
   public function get_product_list() {  //  查询商品列表
     $page = I('page');
     $limit = I('limit');
