@@ -1,5 +1,150 @@
 <include file="Public/header" />
-<div class="layui-body">
-  <div style="padding: 15px;">商品列表</div>
+<div class="product-list" style="padding: 15px;">
+  <div class="layui-card">
+    <div class="layui-card-header">
+      <span>商品列表</span>
+      <a href="{:U('publish')}" class="layui-btn layui-btn-sm">
+        <i class="layui-icon">&#xe609;</i> 发布商品
+      </a>
+    </div>
+    <div class="layui-card-body">
+      <table id="pdList" lay-filter="pdListTb"></table>
+      <script type="text/html" id="pdBar">
+        <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+      </script>
+      <script type="text/html" id="pdTpl">
+        <img src="__UPLOAD__{{d.icon}}" style="width: 50px;" />
+      </script>
+    </div>
+  </div>
 </div>
 <include file="Public/footer" />
+
+<!-- 编辑商品表单 -->
+<form class="layui-form" id="editPd" lay-filter="editPd" style="display: none; padding: 30px;">
+  <div class="layui-form-item">
+    <label class="layui-form-label">商品名称</label>
+    <div class="layui-input-block">
+      <input type="text" name="name" placeholder="请输入" lay-verify="required" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">商品封面</label>
+    <div class="layui-input-block">
+      <img src="" id="pd_edit_cover" width="80" style="display: none;">
+      <button type="button" class="layui-btn layui-btn-normal uploadBtn" id="pd_eidt_cover_btn">
+        <i class="layui-icon">&#xe67c;</i>上传单张封面
+      </button>
+      <input type="hidden" name="photo" id="pd_edit_cover_url" lay-verify="required" lay-reqText="请上传封面" class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">商品单价(¥)</label>
+    <div class="layui-input-block">
+      <input type="number" name="price" placeholder="请输入价格" lay-verify="required|number" autocomplete="off"
+        class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">库存量(台)</label>
+    <div class="layui-input-block">
+      <input type="number" name="stock" placeholder="请输入数量" lay-verify="required|number" autocomplete="off"
+        class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">商品品牌</label>
+    <div class="layui-input-block">
+      <select name="bid" lay-verify="required">
+        <option value="">请选择品牌</option>
+        <volist name="b_list" id="vo">
+          <option value="{$vo.id}">{$vo.name}</option>
+        </volist>
+      </select>
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">商品分类</label>
+    <div class="layui-input-block">
+      <select name="cid" lay-verify="required">
+        <option value="">请选择分类</option>
+        <volist name="c_list" id="vo">
+          <option value="{$vo.id}">{$vo.name}</option>
+        </volist>
+      </select>
+    </div>
+  </div>
+  <div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">广告语</label>
+    <div class="layui-input-block">
+      <textarea placeholder="请输入" name="intro" lay-verify="required" class="layui-textarea"></textarea>
+    </div>
+  </div>
+  <div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">商品详情</label>
+    <div class="layui-input-block">
+      <textarea placeholder="请输入" name="content" lay-verify="required" class="layui-textarea"></textarea>
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">详情图片</label>
+    <div class="layui-input-block">
+      <div class="pd_edit_img_list"></div>
+      <button type="button" class="layui-btn layui-btn-warm" id="pd_edit_imgs_btn">
+        <i class="layui-icon">&#xe67c;</i>上传多张图片
+      </button>
+      <button type="button" class="layui-btn layui-btn-danger" id="pd_clear_btn">
+        <i class="layui-icon">&#xe640;</i>清空当前图片
+      </button>
+      <input type="hidden" name="photo_list" id="pd_edit_imgs_url" lay-verify="required" lay-reqText="请上传详情图片" class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">上架状态</label>
+    <div class="layui-input-block">
+      <input type="radio" name="status" value="1" title="上架" checked>
+      <input type="radio" name="status" value="0" title="下架">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">是否热卖</label>
+    <div class="layui-input-block">
+      <input type="checkbox" name="is_hot" value="1" lay-skin="switch" lay-text="是|否">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="publishPd">立即发布</button>
+      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+    </div>
+  </div>
+</form>
+
+<!-- 添加商品品牌表单 -->
+<form class="layui-form" id="addProductBrand" lay-filter="addProductBrand" style="display: none; padding: 30px;">
+  <div class="layui-form-item">
+    <label class="layui-form-label">品牌名称</label>
+    <div class="layui-input-block">
+      <input type="text" name="name" placeholder="请输入" required lay-verify="required" autocomplete="off"
+        class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">品牌图标</label>
+    <div class="layui-input-block">
+      <img src="" id="add_brand_icon" width="80" style="display: none;">
+      <button type="button" class="layui-btn layui-btn-normal uploadBtn" id="addIconUpload">
+        <i class="layui-icon">&#xe67c;</i>上传图标
+      </button>
+      <input type="hidden" name="icon" id="add_icon_path" required lay-verify="required" lay-reqText="请上传图标"
+        class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="brandAddSave">保存</button>
+      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+    </div>
+  </div>
+</form>

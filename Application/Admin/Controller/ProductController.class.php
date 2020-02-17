@@ -58,6 +58,17 @@ class ProductController extends AdminBaseController {
     $this->ajaxReturn($res);
   }
 
+  public function list() {  //  渲染商品列表页面
+    $category = M('category');  //..实例化category模型
+    $brand = M('brand');  //..实例化product模型
+    $c_list = $category->order('addtime desc')->select();
+    $b_list = $brand->order('addtime desc')->select();
+    
+    $this->assign('c_list',$c_list);
+    $this->assign('b_list',$b_list);
+    $this->display();
+  }
+
   public function get_product_list() {  //  查询商品列表
     $page = I('page');
     $limit = I('limit');
@@ -65,8 +76,10 @@ class ProductController extends AdminBaseController {
     $product = M('product');  //..实例化product模型
     $product_list = $product->limit($start, $limit)->order('addtime desc')->select();
     foreach ($product_list as $key => $value) {
-        $product_list[$key]['status'] = $value['status'] == 1 ? '正常' : '禁用';
-        $product_list[$key]['addtime'] =  date('Y-m-d H:i:s', $value['addtime']);
+      $product_list[$key]['status'] = $value['status'] == 1 ? '正常' : '禁用';
+      $product_list[$key]['is_hot'] = $value['is_hot'] == 1 ? '是' : '否';
+      $product_list[$key]['addtime'] =  date('Y-m-d H:i:s', $value['addtime']);
+      $product_list[$key]['updatetime'] =  date('Y-m-d H:i:s', $value['updatetime']);
     }
     $res['code'] = 0;
     $res['data'] = $product_list;
