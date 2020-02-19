@@ -104,6 +104,7 @@
     <script src="/mobileShop/Public/admin/js/classify.js"></script>
     <script src="/mobileShop/Public/admin/js/member.js"></script>
     <script src="/mobileShop/Public/admin/js/publish.js"></script>
+    <script src="/mobileShop/Public/admin/js/pdlist.js"></script>
     <script src="/mobileShop/Public/admin/js/admin_user.js"></script>
 </body>
 

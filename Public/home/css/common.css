@@ -1,0 +1,50 @@
+/* Search Css */
+.searchWrapper {
+  padding: 30px 0;
+  border-bottom: 1px solid #ddd;
+}
+/* common class */
+.b-orange {
+ background-color: #E44F26; 
+}
+.c-white {
+  color: #fafafa;
+}
+.bd-orange {
+  border-color: #E44F26;
+}
+/* Reset Css */
+html {
+  min-height: 100%;
+  background-color: #F8F8F8;
+}
+.navbar {
+  margin-bottom: 0;
+  border-bottom-color: #F8F8F8;
+}
+.form-control:focus {
+  border-color: #E44F26;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(201, 63, 9, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(201, 63, 9, 0.6);
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: #E44F26;
+}
+
+
+/* 媒体查询CSS */
+@media (min-width: 1200px) {
+  .container {
+      width: 1170px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+      width: 970px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+      width: 750px;
+  }
+}

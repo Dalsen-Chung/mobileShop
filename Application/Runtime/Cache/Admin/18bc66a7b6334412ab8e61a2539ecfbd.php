@@ -7,6 +7,10 @@
     <title>嘉兴手机商城管理后台</title>
     <link rel="stylesheet" href="/mobileShop/Public/admin/css/layui.css">
     <link rel="stylesheet" href="/mobileShop/Public/admin/css/common.css">
+    <script>
+      const USER_ID = '<?php echo (session('user_id')); ?>';
+      const UPLOAD_URL = '/mobileShop/Uploads/';
+    </script>
 </head>
 <body class="layui-layout-body">
     <div class="layui-layout layui-layout-admin">
@@ -77,8 +81,15 @@
             © 许铭聪 - 1640225146
         </div>
     </div>
+    <script src="/mobileShop/Public/home/js/jquery-3.4.1.min.js"></script>
     <script src="/mobileShop/Public/admin/layui.js"></script>
     <script src="/mobileShop/Public/admin/js/common.js"></script>
+    <script src="/mobileShop/Public/admin/js/brand.js"></script>
+    <script src="/mobileShop/Public/admin/js/classify.js"></script>
+    <script src="/mobileShop/Public/admin/js/member.js"></script>
+    <script src="/mobileShop/Public/admin/js/publish.js"></script>
+    <script src="/mobileShop/Public/admin/js/pdlist.js"></script>
+    <script src="/mobileShop/Public/admin/js/admin_user.js"></script>
 </body>
 
 </html>

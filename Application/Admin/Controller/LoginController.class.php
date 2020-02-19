@@ -50,7 +50,7 @@ class LoginController extends Controller {
             }
             session('user_id', $user['id']);    //..用户已登录，存入session信息
             session('user_name', $user['name']);
-            return $this->success('登录成功',U('Index/index'));
+            return $this->success('登录成功',U('Order/index'));
         }
     
     }
