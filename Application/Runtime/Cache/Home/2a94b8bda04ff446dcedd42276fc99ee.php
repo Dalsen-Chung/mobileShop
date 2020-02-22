@@ -54,7 +54,8 @@
   </div>
 </nav>
 <div class="searchWrapper">
-  <div class="container">
+  <div class="container content dpFlex">
+    <img src="/mobileShop/Public/home/images/logo.png" width="120" />
     <div class="input-group input-group-lg">
       <input type="text" class="form-control" placeholder="请输入商品" aria-describedby="sizing-addon1">
       <span class="input-group-addon b-orange bd-orange" id="sizing-addon1">
@@ -62,10 +63,122 @@
       </span>
     </div>
   </div>
+  <div class="container">
+    <div class="condition dpFlex">
+      <span class="title">类别</span>
+      <div class="tags dpFlex">
+        <span class="label label-primary">全部</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+      </div>
+    </div>
+    <div class="condition dpFlex">
+      <span class="title">品牌</span>
+      <div class="tags dpFlex">
+        <span class="label label-primary">全部</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+        <span class="label label-default">Default</span>
+      </div>
+    </div>
+  </div>
 </div>
-<!-- <div class="container">
-  首页
-</div> -->
+<div class="homeWrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="..." alt="...">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>...</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="..." alt="...">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>...</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="..." alt="...">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>...</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="..." alt="...">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>...</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="pagNav" aria-label="Page navigation">
+      <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
 <script src="/mobileShop/Public/home/js/jquery-3.4.1.min.js"></script>
 <script src="/mobileShop/Public/home/js/bootstrap.min.js"></script>
 </body>
