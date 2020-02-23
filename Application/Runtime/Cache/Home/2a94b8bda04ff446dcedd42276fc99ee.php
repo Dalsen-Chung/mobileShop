@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -56,60 +56,46 @@
 <div class="searchWrapper">
   <div class="container content dpFlex">
     <img src="/mobileShop/Public/home/images/logo.png" width="120" />
-    <div class="input-group input-group-lg">
-      <input type="text" class="form-control" placeholder="请输入商品" aria-describedby="sizing-addon1">
-      <span class="input-group-addon b-orange bd-orange" id="sizing-addon1">
-        <span class="glyphicon glyphicon-search c-white" aria-hidden="true"></span>
-      </span>
-    </div>
+    <form action="" method="post">
+      <div class="input-group input-group-lg">
+        <input type="text" name="search" class="form-control" value="<?php echo ($search); ?>" autocomplete="off" placeholder="请输入商品">
+        <span class="input-group-btn">
+          <button class="btn b-orange bd-orange" type="submit">
+            <span class="glyphicon glyphicon-search c-white" aria-hidden="true"></span>
+          </button>
+        </span>
+      </div>
+    </form>
   </div>
   <div class="container">
     <div class="condition dpFlex">
       <span class="title">类别</span>
       <div class="tags dpFlex">
-        <span class="label label-primary">全部</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
+        <a href="<?php echo U('Index/index');?>">
+          <?php if(($query_cid == '')): ?><span class="label label-primary">全部</span>
+            <?php else: ?>
+            <span class="label label-default">全部</span><?php endif; ?>
+        </a>
+        <?php if(is_array($c_list)): $i = 0; $__LIST__ = $c_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U('Index/index');?>?cid=<?php echo ($vo["id"]); ?>">
+            <?php switch(abs($_GET['cid'])): case $vo["id"]: ?><span class="label label-primary"><?php echo ($vo["name"]); ?></span><?php break;?>
+              <?php default: ?>
+              <span class="label label-default"><?php echo ($vo["name"]); ?></span><?php endswitch;?>
+          </a><?php endforeach; endif; else: echo "" ;endif; ?>
       </div>
     </div>
     <div class="condition dpFlex">
       <span class="title">品牌</span>
       <div class="tags dpFlex">
-        <span class="label label-primary">全部</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
+        <a href="<?php echo U('Index/index');?>">
+          <?php if(($query_bid == '')): ?><span class="label label-primary">全部</span>
+            <?php else: ?>
+            <span class="label label-default">全部</span><?php endif; ?>
+        </a>
+        <?php if(is_array($b_list)): $i = 0; $__LIST__ = $b_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U('Index/index');?>?bid=<?php echo ($vo["id"]); ?>">
+            <?php switch(abs($_GET['bid'])): case $vo["id"]: ?><span class="label label-primary"><?php echo ($vo["name"]); ?></span><?php break;?>
+              <?php default: ?>
+              <span class="label label-default"><?php echo ($vo["name"]); ?></span><?php endswitch;?>
+          </a><?php endforeach; endif; else: echo "" ;endif; ?>
       </div>
     </div>
   </div>
@@ -117,66 +103,37 @@
 <div class="homeWrapper">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="..." alt="...">
-          <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>...</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      <?php if(is_array($p_list)): $i = 0; $__LIST__ = $p_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-sm-6 col-md-4">
+          <div class="thumbnail" style="padding-top: 20px;">
+            <img src="/mobileShop/Uploads/<?php echo ($vo["photo"]); ?>" width="100" />
+            <div class="caption">
+              <h3><?php echo ($vo["name"]); ?></h3>
+              <p><?php echo ($vo["intro"]); ?></p>
+              <p class="saleInfo dpFlex">
+                <span class="left">
+                  <span class="price c-orange">
+                    <span style="font-size: 14px;">¥</span><?php echo ($vo["price"]); ?>
+                  </span>
+                  <span class="sales"><?php echo ($vo["sales"]); ?>人付款</span>
+                </span>
+                <?php switch(abs($vo["is_hot"])): case "1": ?><span class="label label-danger">热卖中</span><?php break;?>
+                  <?php default: endswitch;?>
+              </p>
+              <div style="text-align: right;">
+                <a href="#" class="btn btn-default btn-sm" role="button">查看详情</a>
+                <a href="#" class="btn btn-primary btn-sm" role="button">加入购物车</a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="..." alt="...">
-          <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>...</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="..." alt="...">
-          <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>...</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="..." alt="...">
-          <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>...</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
+        </div><?php endforeach; endif; else: echo "" ;endif; ?>
     </div>
-    <nav class="pagNav" aria-label="Page navigation">
-      <ul class="pagination">
-        <li>
-          <a href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-          </a>
-        </li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li>
-          <a href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-          </a>
-        </li>
-      </ul>
+    <nav class="pagNav">
+      <div class="pages">
+        <?php echo ($page); ?>
+      </div>
     </nav>
+    <?php if(sizeof($p_list) == 0): ?>暂无商品
+      <?php else: endif; ?>
   </div>
 </div>
 <script src="/mobileShop/Public/home/js/jquery-3.4.1.min.js"></script>

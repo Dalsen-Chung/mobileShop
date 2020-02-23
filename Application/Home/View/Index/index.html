@@ -4,66 +4,44 @@
 <div class="homeWrapper">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="..." alt="...">
-          <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>...</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      <volist name="p_list" id="vo">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail" style="padding-top: 20px;">
+            <img src="__UPLOAD__{$vo.photo}" width="100" />
+            <div class="caption">
+              <h3>{$vo.name}</h3>
+              <p>{$vo.intro}</p>
+              <p class="saleInfo dpFlex">
+                <span class="left">
+                  <span class="price c-orange">
+                    <span style="font-size: 14px;">¥</span>{$vo.price}
+                  </span>
+                  <span class="sales">{$vo.sales}人付款</span>
+                </span>
+                <switch name="vo.is_hot|abs">
+                  <case value="1">
+                    <span class="label label-danger">热卖中</span>
+                  </case>
+                  <default />
+                </switch>
+              </p>
+              <div style="text-align: right;">
+                <a href="#" class="btn btn-default btn-sm" role="button">查看详情</a>
+                <a href="#" class="btn btn-primary btn-sm" role="button">加入购物车</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="..." alt="...">
-          <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>...</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="..." alt="...">
-          <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>...</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="..." alt="...">
-          <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>...</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
+      </volist>
     </div>
-    <nav class="pagNav" aria-label="Page navigation">
-      <ul class="pagination">
-        <li>
-          <a href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-          </a>
-        </li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li>
-          <a href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-          </a>
-        </li>
-      </ul>
+    <nav class="pagNav">
+      <div class="pages">
+        {$page}
+      </div>
     </nav>
+    <if condition="sizeof($p_list) eq 0">暂无商品
+      <else />
+    </if>
   </div>
 </div>
 <include file="Public/footer" />

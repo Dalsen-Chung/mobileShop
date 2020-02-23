@@ -1,60 +1,62 @@
 <div class="searchWrapper">
   <div class="container content dpFlex">
     <img src="__PUBLIC__/home/images/logo.png" width="120" />
-    <div class="input-group input-group-lg">
-      <input type="text" class="form-control" placeholder="请输入商品" aria-describedby="sizing-addon1">
-      <span class="input-group-addon b-orange bd-orange" id="sizing-addon1">
-        <span class="glyphicon glyphicon-search c-white" aria-hidden="true"></span>
-      </span>
-    </div>
+    <form action="" method="post">
+      <div class="input-group input-group-lg">
+        <input type="text" name="search" class="form-control" value="{$search}" autocomplete="off" placeholder="请输入商品">
+        <span class="input-group-btn">
+          <button class="btn b-orange bd-orange" type="submit">
+            <span class="glyphicon glyphicon-search c-white" aria-hidden="true"></span>
+          </button>
+        </span>
+      </div>
+    </form>
   </div>
   <div class="container">
     <div class="condition dpFlex">
       <span class="title">类别</span>
       <div class="tags dpFlex">
-        <span class="label label-primary">全部</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
+        <a href="{:U('Index/index')}">
+          <if condition="($query_cid eq '')">
+            <span class="label label-primary">全部</span>
+            <else />
+            <span class="label label-default">全部</span>
+          </if>
+        </a>
+        <volist name="c_list" id="vo">
+          <a href="{:U('Index/index')}?cid={$vo.id}">
+            <switch name="Think.get.cid|abs">
+              <case value="$vo.id">
+                <span class="label label-primary">{$vo.name}</span>
+              </case>
+              <default />
+              <span class="label label-default">{$vo.name}</span>
+            </switch>
+          </a>
+        </volist>
       </div>
     </div>
     <div class="condition dpFlex">
       <span class="title">品牌</span>
       <div class="tags dpFlex">
-        <span class="label label-primary">全部</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
-        <span class="label label-default">Default</span>
+        <a href="{:U('Index/index')}">
+          <if condition="($query_bid eq '')">
+            <span class="label label-primary">全部</span>
+            <else />
+            <span class="label label-default">全部</span>
+          </if>
+        </a>
+        <volist name="b_list" id="vo">
+          <a href="{:U('Index/index')}?bid={$vo.id}">
+            <switch name="Think.get.bid|abs">
+              <case value="$vo.id">
+                <span class="label label-primary">{$vo.name}</span>
+              </case>
+              <default />
+              <span class="label label-default">{$vo.name}</span>
+          </switch>
+          </a>
+        </volist>
       </div>
     </div>
   </div>

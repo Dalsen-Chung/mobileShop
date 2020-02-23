@@ -1,5 +1,6 @@
 /* Search Css */
 .searchWrapper {
+  margin-top: 50px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
 }
@@ -7,7 +8,7 @@
   flex-direction: row;
   align-items: center;
 }
-.searchWrapper .content .input-group {
+.searchWrapper .content form {
   flex: 1;
 }
 .searchWrapper .condition {
@@ -25,24 +26,78 @@
   margin-left: 5px;
   cursor: pointer;
   line-height: 1.42857143;
+  display: inline-block;
 }
 /* Home Css */
 .homeWrapper {
   background-color: #F8F8F8;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .homeWrapper .pagNav {
   text-align: center;
+  margin: 20px 0 30px;
+}
+.homeWrapper .saleInfo {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.homeWrapper .saleInfo .left {
+  margin-right: 10px;
+}
+.homeWrapper .saleInfo .label {
+  line-height: 1.42857143;
+}
+.homeWrapper .saleInfo .price {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.homeWrapper .saleInfo .sales {
+  font-size: 13px;
+  color: darkgray;
+}
+/* 分页代码 */
+.homeWrapper .pages a,.pages span {
+  display:inline-block;
+  padding:2px 5px;
+  margin:0 1px;
+  border:1px solid #f0f0f0;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+}
+.homeWrapper .pages a,.pages li {
+  display:inline-block;
+  list-style: none;
+  text-decoration:none; color:#58A0D3;
+}
+.homeWrapper .pages a.first,.pages a.prev,.pages a.next,.pages a.end{
+  margin:0;
+}
+.homeWrapper .pages a:hover {
+  border-color:#50A8E6;
+}
+.homeWrapper .pages span.current {
+  background:#50A8E6;
+  color:#FFF;
+  font-weight:700;
+  border-color:#50A8E6;
 }
 /* Common Css */
 .b-orange {
  background-color: #E44F26; 
+}
+.c-orange {
+  color: #E44F26;
 }
 .c-white {
   color: #fafafa;
 }
 .bd-orange {
   border-color: #E44F26;
+}
+.bd-orange:focus {
+  outline: none;
 }
 .dpFlex {
   display: flex;
