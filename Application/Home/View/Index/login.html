@@ -1,0 +1,28 @@
+<include file="Public/header" />
+<include file="Public/navbar" />
+<div class="register">
+    <div class="container">
+        <div class="page-header">
+            <h3>用户登录</h3>
+        </div>
+        <form method="POST" action="do_login" style="width: 400px; margin: 0 auto;">
+            <div class="form-group">
+              <label for="login_account">登录账号</label>
+              <input type="text" name="account" required class="form-control" id="login_account" placeholder="请输入账号">
+            </div>
+            <div class="form-group">
+              <label for="login_password">登录密码</label>
+              <input type="password" name="password" required class="form-control" id="login_password" placeholder="请输入密码">
+            </div>
+            <div class="form-group">
+              <label for="verify_code">验证码</label>
+              <input type="text" name="verify_code" autocomplete="off" required class="form-control" id="verify_code" placeholder="请输入验证码">
+              <img onclick="this.src=this.src+'?'+Math.random()" width="150" style="margin-top: 10px;" src="{:U('Index/get_captcha')}" >
+            </div>
+            <div class="form-group" style="text-align: center;">
+                <button type="submit" class="btn btn-primary">立即登录</button>
+            </div>
+        </form>
+    </div>
+</div>
+<include file="Public/footer" />

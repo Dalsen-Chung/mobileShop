@@ -25,31 +25,38 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">JxShop</a>
+      <a class="navbar-brand" href="<?php echo U('Index/index');?>">JxShop手机商城</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">注册</a></li>
-        <li><a href="#">登录</a></li>
-        <li><a href="#">购物车<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-            aria-expanded="false">许铭聪 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">我的订单</a></li>
-            <li><a href="#">我的地址</a></li>
-            <li><a href="#">个人信息</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">退出登录</a></li>
-          </ul>
+        <li><a href="<?php echo U('Index/register');?>">注册</a></li>
+
+        <?php if(empty($_SESSION['member_id'])): ?><li><a href="<?php echo U('Index/login');?>">登录</a></li><?php endif; ?>
+
+        <li>
+          <a href="<?php echo U('User/cart');?>" class="dpFlex" style="align-items: center;">
+            购物车
+            <?php if(!empty($_SESSION['member_id'])): ?><span class="badge" style="margin-left: 2px;">0</span><?php endif; ?>
+          </a>
         </li>
+
+        <?php if(!empty($_SESSION['member_avatar'])): ?><li>
+            <a style="padding-top: 13px;" href="<?php echo U('User/info');?>">
+              <img width="20" height="20" src="/mobileShop/Uploads/<?php echo (session('member_avatar')); ?>" style="object-fit: cover;">
+            </a>
+          </li><?php endif; ?>
+
+        <?php if(!empty($_SESSION['member_id'])): ?><li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false"><?php echo (session('member_name')); ?> <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="<?php echo U('User/order');?>">我的订单</a></li>
+              <li><a href="<?php echo U('User/info');?>">个人信息</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="<?php echo U('User/logout');?>">退出登录</a></li>
+            </ul>
+          </li><?php endif; ?>
       </ul>
-      <!-- <form class="navbar-form navbar-center">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="输入商品">
-        </div>
-        <button type="submit" class="btn btn-default">搜索</button>
-      </form> -->
     </div>
   </div>
 </nav>
@@ -120,8 +127,8 @@
                   <?php default: endswitch;?>
               </p>
               <div style="text-align: right;">
-                <a href="#" class="btn btn-default btn-sm" role="button">查看详情</a>
-                <a href="#" class="btn btn-primary btn-sm" role="button">加入购物车</a>
+                <a href="<?php echo U('Index/detail');?>?pid=<?php echo ($vo["id"]); ?>" class="btn btn-default btn-sm" role="button">查看详情</a>
+                <a href="<?php echo U('User/add_cart');?>?pid=<?php echo ($vo["id"]); ?>" class="btn btn-primary btn-sm" role="button">加入购物车</a>
               </div>
             </div>
           </div>

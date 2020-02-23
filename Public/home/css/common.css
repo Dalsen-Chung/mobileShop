@@ -83,6 +83,12 @@
   font-weight:700;
   border-color:#50A8E6;
 }
+/* 注册页面 */
+.register {
+  margin-top: 50px;
+  height: calc(100vh - 50px);
+  overflow: hidden;
+}
 /* Common Css */
 .b-orange {
  background-color: #E44F26; 
@@ -100,8 +106,8 @@
   outline: none;
 }
 .dpFlex {
-  display: flex;
-  display: -webkit-flex;
+  display: flex !important;
+  display: -webkit-flex !important;
 }
 /* Reset Css */
 html {

@@ -8,31 +8,46 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">JxShop</a>
+      <a class="navbar-brand" href="{:U('Index/index')}">JxShop手机商城</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">注册</a></li>
-        <li><a href="#">登录</a></li>
-        <li><a href="#">购物车<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-            aria-expanded="false">许铭聪 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">我的订单</a></li>
-            <li><a href="#">我的地址</a></li>
-            <li><a href="#">个人信息</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">退出登录</a></li>
-          </ul>
+        <li><a href="{:U('Index/register')}">注册</a></li>
+
+        <empty name="Think.session.member_id">
+          <li><a href="{:U('Index/login')}">登录</a></li>
+        </empty>
+
+        <li>
+          <a href="{:U('User/cart')}" class="dpFlex" style="align-items: center;">
+            购物车
+            <notempty name="Think.session.member_id">
+              <span class="badge" style="margin-left: 2px;">0</span>
+            </notempty>
+          </a>
         </li>
+
+        <notempty name="Think.session.member_avatar">
+          <li>
+            <a style="padding-top: 13px;" href="{:U('User/info')}">
+              <img width="20" height="20" src="__UPLOAD__{$Think.session.member_avatar}" style="object-fit: cover;">
+            </a>
+          </li>
+        </notempty>
+
+        <notempty name="Think.session.member_id">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">{$Think.session.member_name} <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="{:U('User/order')}">我的订单</a></li>
+              <li><a href="{:U('User/info')}">个人信息</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="{:U('User/logout')}">退出登录</a></li>
+            </ul>
+          </li>
+        </notempty>
       </ul>
-      <!-- <form class="navbar-form navbar-center">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="输入商品">
-        </div>
-        <button type="submit" class="btn btn-default">搜索</button>
-      </form> -->
     </div>
   </div>
 </nav>

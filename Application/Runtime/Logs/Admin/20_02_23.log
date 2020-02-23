@@ -1,0 +1,369 @@
+[ 2020-02-23T19:14:57+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 21 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 27 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 30 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 34 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 56 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 62 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 65 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 68 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008747s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2020-02-23T19:14:57+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_admin_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000030s ]
+SQL: SHOW COLUMNS FROM `jx_admin_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jx_admin_user` ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_admin_user` LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-02-23T19:15:10+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/Logout/do
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+
+[ 2020-02-23T19:15:10+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+
+[ 2020-02-23T19:15:10+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/Login/get_captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000213s ]
+
+[ 2020-02-23T19:15:14+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+
+[ 2020-02-23T19:15:14+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000035s ]
+
+[ 2020-02-23T19:15:14+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/Login/get_captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000208s ]
+
+[ 2020-02-23T19:15:20+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/Login/get_captcha?0.8934500468016398
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000087s ]
+
+[ 2020-02-23T19:15:24+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/Login/do
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `jx_admin_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jx_admin_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000033s ]
+
+[ 2020-02-23T19:15:25+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/Order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/18bc66a7b6334412ab8e61a2539ecfbd.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/18bc66a7b6334412ab8e61a2539ecfbd.php 第 21 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/18bc66a7b6334412ab8e61a2539ecfbd.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/18bc66a7b6334412ab8e61a2539ecfbd.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/18bc66a7b6334412ab8e61a2539ecfbd.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/18bc66a7b6334412ab8e61a2539ecfbd.php 第 27 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/18bc66a7b6334412ab8e61a2539ecfbd.php 第 30 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/18bc66a7b6334412ab8e61a2539ecfbd.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/18bc66a7b6334412ab8e61a2539ecfbd.php 第 34 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/18bc66a7b6334412ab8e61a2539ecfbd.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/18bc66a7b6334412ab8e61a2539ecfbd.php 第 56 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/18bc66a7b6334412ab8e61a2539ecfbd.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/18bc66a7b6334412ab8e61a2539ecfbd.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/18bc66a7b6334412ab8e61a2539ecfbd.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/18bc66a7b6334412ab8e61a2539ecfbd.php 第 62 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/18bc66a7b6334412ab8e61a2539ecfbd.php 第 65 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/18bc66a7b6334412ab8e61a2539ecfbd.php 第 68 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/18bc66a7b6334412ab8e61a2539ecfbd.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2020-02-23T21:25:23+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 20 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 21 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 24 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 25 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 26 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 27 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 30 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 33 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 34 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 55 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 56 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 59 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 60 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 61 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 62 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 65 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 68 行.
+NOTIC: [8] Undefined variable: Think /usr/local/var/www/mobileShop/Application/Runtime/Cache/Admin/970b359eab7c3067a5e3a02a7c838fa8.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2020-02-23T21:25:23+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/get_admin_list?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `jx_admin_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `jx_admin_user` ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jx_admin_user` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2020-02-23T21:25:25+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/Logout/do
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+
+[ 2020-02-23T21:25:25+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000032s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001096s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000029s ]
+
+[ 2020-02-23T21:25:25+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/Login/get_captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000100s ]
+
+[ 2020-02-23T21:25:26+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/Login/get_captcha?0.45632549970240754
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000088s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000115s ]
+
+[ 2020-02-23T21:25:26+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/Login/get_captcha?0.45632549970240754?0.5553393125275559
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2020-02-23T21:25:26+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/Login/get_captcha?0.45632549970240754?0.5553393125275559?0.5624411651066432
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2020-02-23T21:25:27+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/Login/get_captcha?0.45632549970240754?0.5553393125275559?0.5624411651066432?0.13756932452302784
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2020-02-23T22:57:58+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/User/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+
+[ 2020-02-23T22:57:58+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+
+[ 2020-02-23T22:57:58+08:00 ] 127.0.0.1 /mobileShop/index.php/Admin/Login/get_captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000121s ]
+
