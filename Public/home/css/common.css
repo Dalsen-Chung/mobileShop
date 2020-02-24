@@ -87,7 +87,22 @@
 .register {
   margin-top: 50px;
   height: calc(100vh - 50px);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* 购物车页面 */
+.cart {
+  margin-top: 50px;
+  height: calc(100vh - 50px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.cart tbody td {
+  vertical-align: middle !important;
+}
+.cart .cartInfo {
+  align-items: center;
+  justify-content: space-between;
 }
 /* Common Css */
 .b-orange {

@@ -19,6 +19,25 @@ class IndexController extends Controller {
         $this->assign('query_bid',$query_bid);
         $this->assign('p_list',$p_list);
         $this->assign('page',$page);
+
+        $user_id = session('member_id');
+        if ($user_id) {    //  未登录
+            $cart = M('shopping_car');
+            $map['uid'] = $user_id;
+            $cart_counts = $cart->where($map)->count();
+            $this->assign('cart_counts',$cart_counts);
+        }
+        $this->display();
+    }
+
+    public function register() {
+        $user_id = session('member_id');
+        if ($user_id) {    //  未登录
+            $cart = M('shopping_car');
+            $map['uid'] = $user_id;
+            $cart_counts = $cart->where($map)->count();
+            $this->assign('cart_counts',$cart_counts);
+        }
         $this->display();
     }
 

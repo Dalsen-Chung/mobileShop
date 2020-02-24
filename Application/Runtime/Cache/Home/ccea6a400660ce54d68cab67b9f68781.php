@@ -29,16 +29,14 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="<?php echo U('Index/register');?>">注册</a></li>
+        <?php if(empty($_SESSION['member_id'])): ?><li><a href="<?php echo U('Index/register');?>">注册</a></li>
+          <li><a href="<?php echo U('Index/login');?>">登录</a></li><?php endif; ?>
 
-        <?php if(empty($_SESSION['member_id'])): ?><li><a href="<?php echo U('Index/login');?>">登录</a></li><?php endif; ?>
-
-        <li>
-          <a href="<?php echo U('User/cart');?>" class="dpFlex" style="align-items: center;">
-            购物车
-            <?php if(!empty($_SESSION['member_id'])): ?><span class="badge" style="margin-left: 2px;">0</span><?php endif; ?>
-          </a>
-        </li>
+        <?php if(!empty($_SESSION['member_id'])): ?><li>
+            <a href="<?php echo U('User/cart');?>" class="dpFlex" style="align-items: center;">
+              购物车<span class="badge b-orange" style="margin-left: 2px;"><?php echo ($cart_counts); ?></span>
+            </a>
+          </li><?php endif; ?>
 
         <?php if(!empty($_SESSION['member_avatar'])): ?><li>
             <a style="padding-top: 13px;" href="<?php echo U('User/info');?>">

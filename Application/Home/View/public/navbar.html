@@ -12,20 +12,18 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="{:U('Index/register')}">注册</a></li>
-
         <empty name="Think.session.member_id">
+          <li><a href="{:U('Index/register')}">注册</a></li>
           <li><a href="{:U('Index/login')}">登录</a></li>
         </empty>
 
-        <li>
-          <a href="{:U('User/cart')}" class="dpFlex" style="align-items: center;">
-            购物车
-            <notempty name="Think.session.member_id">
-              <span class="badge" style="margin-left: 2px;">0</span>
-            </notempty>
-          </a>
-        </li>
+        <notempty name="Think.session.member_id">
+          <li>
+            <a href="{:U('User/cart')}" class="dpFlex" style="align-items: center;">
+              购物车<span class="badge b-orange" style="margin-left: 2px;">{$cart_counts}</span>
+            </a>
+          </li>
+        </notempty>
 
         <notempty name="Think.session.member_avatar">
           <li>

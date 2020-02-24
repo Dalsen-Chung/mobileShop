@@ -8,5 +8,9 @@ class HomeBaseController extends Controller {
       if (!$user_id) {    //  未登录
         $this->redirect('Index/login'); //..重定向至登录页面
       }
+      $cart = M('shopping_car');
+      $map['uid'] = $user_id;
+      $cart_counts = $cart->where($map)->count();
+      $this->assign('cart_counts',$cart_counts);
     }
 }
