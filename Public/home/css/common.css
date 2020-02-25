@@ -104,6 +104,27 @@
   align-items: center;
   justify-content: space-between;
 }
+/* 我的信息页面 */
+.user_info {
+  margin-top: 50px;
+  height: calc(100vh - 50px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* 我的收货地址页面 */
+.user_address {
+  margin-top: 50px;
+  height: calc(100vh - 50px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* 余额充值页面 */
+.top_up {
+  margin-top: 50px;
+  height: calc(100vh - 50px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 /* Common Css */
 .b-orange {
  background-color: #E44F26; 

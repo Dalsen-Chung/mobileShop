@@ -51,6 +51,7 @@
               <li><a href="<?php echo U('User/order');?>">我的订单</a></li>
               <li><a href="<?php echo U('User/info');?>">个人信息</a></li>
               <li><a href="<?php echo U('User/address');?>">收货地址</a></li>
+              <li><a href="<?php echo U('User/top_up');?>">余额充值</a></li>
               <li role="separator" class="divider"></li>
               <li><a href="<?php echo U('User/logout');?>">退出登录</a></li>
             </ul>
@@ -59,27 +60,19 @@
     </div>
   </div>
 </nav>
-<div class="register">
+<div class="top_up">
     <div class="container">
         <div class="page-header">
-            <h3>用户登录</h3>
+            <h3>余额充值</h3>
         </div>
-        <form method="POST" action="do_login" style="width: 400px; margin: 0 auto;">
+        <form method="POST" action="do_top_up" style="width: 400px; margin: 0 auto;">
             <div class="form-group">
-              <label for="login_account">登录账号</label>
-              <input type="text" name="account" required class="form-control" id="login_account" placeholder="请输入账号">
-            </div>
-            <div class="form-group">
-              <label for="login_password">登录密码</label>
-              <input type="password" name="password" required class="form-control" id="login_password" placeholder="请输入密码">
-            </div>
-            <div class="form-group">
-              <label for="verify_code">验证码</label>
-              <input type="text" name="verify_code" autocomplete="off" required class="form-control" id="verify_code" placeholder="请输入验证码">
-              <img onclick="this.src=this.src+'?'+Math.random()" width="150" style="margin-top: 10px;" src="<?php echo U('Index/get_captcha');?>" >
+              <label for="balance">充值金额</label>
+              <input type="text" name="balance" required class="form-control" id="balance" placeholder="请输入充值金额">
+              <p class="help-block c-orange">当前余额：<?php echo ($balance); ?></p>
             </div>
             <div class="form-group" style="text-align: center;">
-                <button type="submit" class="btn btn-primary">立即登录</button>
+                <button type="submit" class="btn btn-primary">立即充值</button>
             </div>
         </form>
     </div>

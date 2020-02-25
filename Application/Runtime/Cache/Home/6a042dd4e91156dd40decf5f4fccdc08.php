@@ -51,6 +51,7 @@
               <li><a href="<?php echo U('User/order');?>">我的订单</a></li>
               <li><a href="<?php echo U('User/info');?>">个人信息</a></li>
               <li><a href="<?php echo U('User/address');?>">收货地址</a></li>
+              <li><a href="<?php echo U('User/top_up');?>">余额充值</a></li>
               <li role="separator" class="divider"></li>
               <li><a href="<?php echo U('User/logout');?>">退出登录</a></li>
             </ul>
@@ -59,27 +60,48 @@
     </div>
   </div>
 </nav>
-<div class="register">
+<div class="user_info">
     <div class="container">
         <div class="page-header">
-            <h3>用户登录</h3>
+            <h3>我的信息</h3>
         </div>
-        <form method="POST" action="do_login" style="width: 400px; margin: 0 auto;">
+        <form method="POST" action="save_info" style="width: 400px; margin: 0 auto;">
             <div class="form-group">
-              <label for="login_account">登录账号</label>
-              <input type="text" name="account" required class="form-control" id="login_account" placeholder="请输入账号">
+              <label for="edit_account">登录账号</label>
+              <input type="text" name="account" value="<?php echo ($user_info["account"]); ?>" required class="form-control" readonly id="edit_account" placeholder="请输入账号">
             </div>
             <div class="form-group">
-              <label for="login_password">登录密码</label>
-              <input type="password" name="password" required class="form-control" id="login_password" placeholder="请输入密码">
+                <label for="edit_name">昵称</label>
+                <input type="text" name="name" value="<?php echo ($user_info["name"]); ?>" required class="form-control" id="edit_name" placeholder="请输入昵称">
             </div>
             <div class="form-group">
-              <label for="verify_code">验证码</label>
-              <input type="text" name="verify_code" autocomplete="off" required class="form-control" id="verify_code" placeholder="请输入验证码">
-              <img onclick="this.src=this.src+'?'+Math.random()" width="150" style="margin-top: 10px;" src="<?php echo U('Index/get_captcha');?>" >
+                <label for="edit_tel">电话号码</label>
+                <input type="tel" name="tel" value="<?php echo ($user_info["tel"]); ?>" required class="form-control" id="edit_tel" placeholder="请输入电话">
+            </div>
+            <div class="form-group dpFlex" style="align-items: center;">
+                <label style="margin-bottom: 0; margin-right: 10px;">性别</label>
+                <label class="radio-inline">
+                    <?php switch(abs($user_info["sex"])): case "1": ?><input type="radio" name="sex" value="1" checked> 男<?php break;?>
+                        <?php default: ?>
+                            <input type="radio" name="sex" value="1" > 男<?php endswitch;?>
+                </label>
+                <label class="radio-inline">
+                    <?php switch(abs($user_info["sex"])): case "2": ?><input type="radio" name="sex" value="2" checked> 女<?php break;?>
+                        <?php default: ?>
+                            <input type="radio" name="sex" value="2"> 女<?php endswitch;?>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="edit_balance">当前余额</label>
+                <input type="text" name="balance" value="<?php echo ($user_info["balance"]); ?>" required readonly class="form-control" id="edit_balance">
+            </div>
+            <div class="form-group">
+              <label for="edit_password">新密码</label>
+              <input type="password" name="password" class="form-control" id="edit_password" placeholder="请输入要更改的密码">
+              <p class="help-block">需要修改密码时填入即可</p>
             </div>
             <div class="form-group" style="text-align: center;">
-                <button type="submit" class="btn btn-primary">立即登录</button>
+                <button type="submit" class="btn btn-primary">保存</button>
             </div>
         </form>
     </div>

@@ -51,6 +51,7 @@
               <li><a href="<?php echo U('User/order');?>">我的订单</a></li>
               <li><a href="<?php echo U('User/info');?>">个人信息</a></li>
               <li><a href="<?php echo U('User/address');?>">收货地址</a></li>
+              <li><a href="<?php echo U('User/top_up');?>">余额充值</a></li>
               <li role="separator" class="divider"></li>
               <li><a href="<?php echo U('User/logout');?>">退出登录</a></li>
             </ul>
@@ -59,27 +60,30 @@
     </div>
   </div>
 </nav>
-<div class="register">
+<div class="user_address">
     <div class="container">
         <div class="page-header">
-            <h3>用户登录</h3>
+            <h3>我的收货地址</h3>
         </div>
-        <form method="POST" action="do_login" style="width: 400px; margin: 0 auto;">
+        <form method="POST" action="save_address" style="width: 400px; margin: 0 auto;">
             <div class="form-group">
-              <label for="login_account">登录账号</label>
-              <input type="text" name="account" required class="form-control" id="login_account" placeholder="请输入账号">
+              <label for="receiver">收货人</label>
+              <input type="text" name="receiver" value="<?php echo ($user_address["receiver"]); ?>" required class="form-control" autocomplete="off" id="receiver" placeholder="请输入收货人">
             </div>
             <div class="form-group">
-              <label for="login_password">登录密码</label>
-              <input type="password" name="password" required class="form-control" id="login_password" placeholder="请输入密码">
+                <label for="tel">收货人电话</label>
+                <input type="tel" name="tel" value="<?php echo ($user_address["tel"]); ?>" required class="form-control" id="tel" autocomplete="off" placeholder="请输入11位手机号">
             </div>
             <div class="form-group">
-              <label for="verify_code">验证码</label>
-              <input type="text" name="verify_code" autocomplete="off" required class="form-control" id="verify_code" placeholder="请输入验证码">
-              <img onclick="this.src=this.src+'?'+Math.random()" width="150" style="margin-top: 10px;" src="<?php echo U('Index/get_captcha');?>" >
+                <label for="address">收货地址</label>
+                <textarea name="address" required id="address" placeholder="请输入详细地址" autocomplete="off" class="form-control" rows="3"><?php echo ($user_address["address"]); ?></textarea>
+            </div>
+            <div class="form-group">
+                <label for="postcode">邮编</label>
+                <input type="number" name="postcode" value="<?php echo ($user_address["postcode"]); ?>" required class="form-control" autocomplete="off" id="postcode" placeholder="请输入邮编">
             </div>
             <div class="form-group" style="text-align: center;">
-                <button type="submit" class="btn btn-primary">立即登录</button>
+                <button type="submit" class="btn btn-primary">保存</button>
             </div>
         </form>
     </div>
