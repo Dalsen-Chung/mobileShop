@@ -125,6 +125,13 @@
   overflow-x: hidden;
   overflow-y: auto;
 }
+/* 结算购物车页面 */
+.user_settle {
+  margin-top: 50px;
+  height: calc(100vh - 50px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 /* Common Css */
 .b-orange {
  background-color: #E44F26; 

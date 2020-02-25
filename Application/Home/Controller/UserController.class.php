@@ -205,4 +205,20 @@ class UserController extends HomeBaseController {
             }
         }
     }
+
+    public function settle() {  //  渲染结算页面
+        $address = M('user_address');
+        $user_id = session('member_id');
+        $map['uid'] = $user_id;
+        $user_address = $address->where($map)->find();  //  先判断用户有无填写收货地址
+        if ($user_address) {   //   有收货地址
+            $this->display();
+        } else {    //  无收货地址则先完善收货地址
+            return $this->error('请先完善收货地址', U('User/address'));
+        }
+    }
+
+    public function do_settle() {   //  执行购物车结算
+
+    }
 }

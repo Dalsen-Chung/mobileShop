@@ -11,7 +11,7 @@
  Target Server Version : 80016
  File Encoding         : 65001
 
- Date: 23/02/2020 23:17:20
+ Date: 25/02/2020 22:44:57
 */
 
 SET NAMES utf8mb4;
@@ -98,6 +98,17 @@ CREATE TABLE `jx_order` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='订单表';
 
 -- ----------------------------
+-- Table structure for jx_order_product
+-- ----------------------------
+DROP TABLE IF EXISTS `jx_order_product`;
+CREATE TABLE `jx_order_product` (
+  `id` int(11) NOT NULL COMMENT '中间表数据id',
+  `order_no` varchar(255) DEFAULT NULL COMMENT '订单号',
+  `pid` int(11) DEFAULT NULL COMMENT '商品ID',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单与商品中间表';
+
+-- ----------------------------
 -- Table structure for jx_product
 -- ----------------------------
 DROP TABLE IF EXISTS `jx_product`;
@@ -145,12 +156,18 @@ CREATE TABLE `jx_shopping_car` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '购物车数据id',
   `uid` int(11) DEFAULT NULL COMMENT '用户ID',
   `pid` int(11) DEFAULT NULL COMMENT '商品ID',
-  `spec_id` int(11) DEFAULT NULL COMMENT '商品规格ID',
   `price` decimal(10,2) DEFAULT NULL COMMENT '商品单价',
-  `num` int(11) DEFAULT NULL COMMENT '商品数量',
+  `num` int(11) DEFAULT '1' COMMENT '商品数量',
   `addtime` int(12) DEFAULT NULL COMMENT '添加时间',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='购物车表';
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='购物车表';
+
+-- ----------------------------
+-- Records of jx_shopping_car
+-- ----------------------------
+BEGIN;
+INSERT INTO `jx_shopping_car` VALUES (14, 1, 2, 8888.00, 1, 1582639715);
+COMMIT;
 
 -- ----------------------------
 -- Table structure for jx_user
@@ -164,7 +181,7 @@ CREATE TABLE `jx_user` (
   `avatar` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '用户头像Url',
   `tel` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '电话',
   `sex` tinyint(1) DEFAULT '1' COMMENT '性别，1男，2女',
-  `balance` int(11) DEFAULT '0' COMMENT '用户余额',
+  `balance` decimal(11,2) DEFAULT '0.00' COMMENT '用户余额',
   `status` tinyint(1) DEFAULT '1' COMMENT '状态，0禁用，1正常',
   `addtime` int(12) DEFAULT NULL COMMENT '注册时间',
   PRIMARY KEY (`id`) USING BTREE
@@ -174,7 +191,7 @@ CREATE TABLE `jx_user` (
 -- Records of jx_user
 -- ----------------------------
 BEGIN;
-INSERT INTO `jx_user` VALUES (1, 'test', '测试用户', 'e10adc3949ba59abbe56e057f20f883e', 'images/avatar/2020-02-23/5e527eb74b44c.jpg', '13539038708', 1, 0, 1, 1582464695);
+INSERT INTO `jx_user` VALUES (1, 'test', '测试用户11', '202cb962ac59075b964b07152d234b70', 'images/avatar/2020-02-23/5e527eb74b44c.jpg', '13511111111', 1, 7.50, 1, 1582464695);
 COMMIT;
 
 -- ----------------------------
@@ -190,7 +207,14 @@ CREATE TABLE `jx_user_address` (
   `postcode` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '邮编',
   `addtime` int(12) DEFAULT NULL COMMENT '添加时间',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='用户收货地址表';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='用户收货地址表';
+
+-- ----------------------------
+-- Records of jx_user_address
+-- ----------------------------
+BEGIN;
+INSERT INTO `jx_user_address` VALUES (2, 1, '小明', '13511111111', '上海浦东区', '241131', 1582640667);
+COMMIT;
 
 -- ----------------------------
 -- Table structure for jx_user_return

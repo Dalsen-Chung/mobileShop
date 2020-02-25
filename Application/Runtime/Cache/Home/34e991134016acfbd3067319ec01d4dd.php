@@ -113,7 +113,7 @@
                         </span>
                     </span>
                 </span>
-                <a href="#" class="btn btn-primary" role="button">去结算</a>
+                <a href="<?php echo U('User/settle');?>" class="btn btn-primary" role="button">去结算</a>
             </div><?php endif; ?>
         <?php if(empty($cart_list)): ?><div>
                 <span>暂未选购任何商品<a href="<?php echo U('Index/index');?>">点我</a>去选购吧！</span>
