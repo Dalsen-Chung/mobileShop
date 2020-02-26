@@ -65,9 +65,37 @@
         <div class="page-header">
             <h3>订单结算</h3>
         </div>
-        <div class="settle_content">
-            <a href="<?php echo U('User/settle');?>" class="btn btn-primary" role="button">立即付款</a>
+        <div class="settleInfo">
+            <span class="info">
+                <span style="margin-right: 10px;">共<?php echo ($num_count); ?>件商品</span>
+                <span style="color: gray;">合计：
+                    <span class="c-orange" style="font-size: 0px;">
+                        <span style="font-size: 15px;">¥</span>
+                        <span style="font-size: 25px;"><?php echo ($price_count); ?></span>
+                    </span>
+                </span>
+            </span>
         </div>
+        <h4>商品寄送地址</h4>
+        <div class="address">
+            <div class="info_row">
+                <span class="key">收货人</span>
+                <span class="value"><?php echo ($address["receiver"]); ?></span>
+            </div>
+            <div class="info_row">
+                <span class="key">收货人电话</span>
+                <span class="value"><?php echo ($address["tel"]); ?></span>
+            </div>
+            <div class="info_row">
+                <span class="key">详细地址</span>
+                <span class="value"><?php echo ($address["address"]); ?></span>
+            </div>
+            <div class="info_row">
+                <span class="key">邮编</span>
+                <span class="value"><?php echo ($address["postcode"]); ?></span>
+            </div>
+        </div>
+        <a href="<?php echo U('User/do_settle');?>" class="btn btn-danger" role="button">立即付款</a>
     </div>
 </div>
 <script src="/mobileShop/Public/home/js/jquery-3.4.1.min.js"></script>

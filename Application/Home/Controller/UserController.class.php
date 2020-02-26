@@ -212,6 +212,21 @@ class UserController extends HomeBaseController {
         $map['uid'] = $user_id;
         $user_address = $address->where($map)->find();  //  先判断用户有无填写收货地址
         if ($user_address) {   //   有收货地址
+            $cart = M('shopping_car');
+            $c_map['uid'] = $user_id;
+            $cart_list = $cart->where($c_map)->select();   //  查询当前用户的购物车数据
+            if ($cart_list == null) {  //  购物车没有记录
+                return $this->redirect('User/cart');
+            }
+            $price_count = 0;   //  购物车总金额计算变量
+            foreach ($cart_list as $key => $value) {
+                // 计算金额
+                $price_count = bcadd($price_count, bcmul($value['num'], $value['price']));
+            }
+            $num_count = $cart->where($c_map)->sum('num');
+            $this->assign('num_count', $num_count);
+            $this->assign('price_count', number_format($price_count, 2));
+            $this->assign('address', $user_address);    //..往模板中传入收货地址
             $this->display();
         } else {    //  无收货地址则先完善收货地址
             return $this->error('请先完善收货地址', U('User/address'));
@@ -219,6 +234,55 @@ class UserController extends HomeBaseController {
     }
 
     public function do_settle() {   //  执行购物车结算
+        $cart = M('shopping_car');
+        $uid = session('member_id');
+        $c_map['uid'] = $uid;
+        $cart_list = $cart->where($c_map)->select();   //  查询当前用户的购物车数据
+        $price_count = 0;   //  购物车总金额计算变量
+        foreach ($cart_list as $key => $value) {
+            // 计算金额
+            $price_count = bcadd($price_count, bcmul($value['num'], $value['price']));
+        }
+        $num_count = $cart->where($c_map)->sum('num');
 
+        $user = M('user');
+        $user_balance = $user->where(array('id' => $uid))->getField('balance'); //..获取用户余额
+        if ($user_balance < $price_count) {     //  用户余额不足
+            return $this->error('您当前余额不足，请先充值', U('User/top_up'));
+        } else {    //  余额足够 立即购买商品
+            $buy_res = $user->where(array('id' => $uid))->setDec('balance', $price_count);
+            if ($buy_res) { //  扣款成功
+                //  生产订单
+                $order_no = $this->get_sn();
+                $order_data['uid'] = $uid;
+                $order_data['order_sn'] = $order_no;
+                $order_data['price'] = $price_count;
+                $order_data['product_num'] = $num_count;
+                $order_data['status'] = 1;  //..1支付成功，2已发货，3已退货，4已取消
+                $order_data['addtime'] = time();
+                $order = M('order');
+                $order->add($order_data);
+
+                //  往订单商品中间表插入记录
+                $order_product = M('order_product');
+                foreach ($cart_list as $key => $value) {
+                    $op_data['order_no'] = $order_no;
+                    $op_data['pid'] = $value['pid'];
+                    $op_data['price'] = $value['price'];
+                    $op_data['num'] = $value['num'];
+                    $order_product->add($op_data);
+                }
+
+                //  清空用户购物车
+                $cart->where(array('uid' => $uid))->delete();
+                return $this->success('商品购买成功', U('User/order'));
+            } else {
+                return $this->error('用户扣款失败');
+            }
+        }
+
+    }
+    private function get_sn() {     //  生成唯一订单号函数
+        return date('YmdHis').rand(100000, 999999);
     }
 }

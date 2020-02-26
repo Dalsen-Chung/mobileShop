@@ -132,6 +132,23 @@
   overflow-x: hidden;
   overflow-y: auto;
 }
+.user_settle .address {
+  padding-left: 10px;
+  border-left: 3px solid #D9534F;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.user_settle .address .info_row {
+  margin-bottom: 15px;
+}
+.user_settle .address .info_row .key {
+  margin-right: 30px;
+  color: #606266;
+}
+.user_settle .address .info_row .value {
+  color: #000000;
+}
 /* Common Css */
 .b-orange {
  background-color: #E44F26; 
