@@ -149,6 +149,17 @@
 .user_settle .address .info_row .value {
   color: #000000;
 }
+/* 用户订单页面 */
+.user_order {
+  margin-top: 50px;
+  height: calc(100vh - 50px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.user_order tbody td {
+  vertical-align: middle !important;
+  padding: 12px 8px !important;
+}
 /* Common Css */
 .b-orange {
  background-color: #E44F26; 

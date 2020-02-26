@@ -253,9 +253,9 @@ class UserController extends HomeBaseController {
             $buy_res = $user->where(array('id' => $uid))->setDec('balance', $price_count);
             if ($buy_res) { //  扣款成功
                 //  生产订单
-                $order_no = $this->get_sn();
+                $order_sn = $this->get_sn();
                 $order_data['uid'] = $uid;
-                $order_data['order_sn'] = $order_no;
+                $order_data['order_sn'] = $order_sn;
                 $order_data['price'] = $price_count;
                 $order_data['product_num'] = $num_count;
                 $order_data['status'] = 1;  //..1支付成功，2已发货，3已退货，4已取消
@@ -266,7 +266,7 @@ class UserController extends HomeBaseController {
                 //  往订单商品中间表插入记录
                 $order_product = M('order_product');
                 foreach ($cart_list as $key => $value) {
-                    $op_data['order_no'] = $order_no;
+                    $op_data['order_sn'] = $order_sn;
                     $op_data['pid'] = $value['pid'];
                     $op_data['price'] = $value['price'];
                     $op_data['num'] = $value['num'];
@@ -284,5 +284,53 @@ class UserController extends HomeBaseController {
     }
     private function get_sn() {     //  生成唯一订单号函数
         return date('YmdHis').rand(100000, 999999);
+    }
+
+    public function order() {       //  渲染我的订单页面
+        $uid = session('member_id');
+        $order = M('order');
+        $order_product = M('order_product');
+        $product = M('product');
+        $order_list = $order->where(array('uid' => $uid))->select();
+        foreach ($order_list as $key => $value) {
+            $order_list[$key]['status_text'] = $this->order_status_map($value['status']);
+            $order_sn = $value['order_sn'];
+            $op_list = $order_product->where(array('order_sn' => $order_sn))->select();
+            $descArr = array();
+            foreach ($op_list as $op_key => $op_value) {
+                $pid = $op_value['pid'];
+                $p_name = $product->where(array('id' => $pid))->getField('name');
+                array_push($descArr, '商品：'.$p_name.'，单价：¥'.$op_value['price'].'，数量：'.$op_value['num']);
+            }
+            $order_list[$key]['desc'] = implode('<br>', $descArr);
+        }
+        $this->assign('order_list', $order_list);
+        $this->display();
+    }
+
+    private function order_status_map($status) {   //  订单状态码与解释映射
+        $map = array(
+            '1' => '支付成功',
+            '2' => '已发货',
+            '3' => '已取消'
+        );
+        $text = $map[$status];
+        if ($text) {
+            return $map[$status];
+        } else {
+            return '未知';
+        }
+    }
+
+    public function cancel_order() {    //  取消订单
+        $order_sn = I('order_sn');
+        $order = M('order');
+        $data['status'] = 3;
+        $res = $order->where(array('order_sn' => $order_sn))->save($data);
+        if ($res !== false) {
+            return $this->success('订单已取消');
+        } else {
+            return $this->error('订单取消失败');
+        }
     }
 }
