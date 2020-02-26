@@ -50,6 +50,8 @@
             <ul class="dropdown-menu">
               <li><a href="<?php echo U('User/order');?>">我的订单</a></li>
               <li><a href="<?php echo U('User/info');?>">个人信息</a></li>
+              <li><a href="<?php echo U('User/address');?>">收货地址</a></li>
+              <li><a href="<?php echo U('User/top_up');?>">余额充值</a></li>
               <li role="separator" class="divider"></li>
               <li><a href="<?php echo U('User/logout');?>">退出登录</a></li>
             </ul>
@@ -102,6 +104,7 @@
 </div>
 <script src="/mobileShop/Public/home/js/jquery-3.4.1.min.js"></script>
 <script src="/mobileShop/Public/home/js/bootstrap.min.js"></script>
+<script src="/mobileShop/Public/home/js/common.js"></script>
 </body>
 
 </html>

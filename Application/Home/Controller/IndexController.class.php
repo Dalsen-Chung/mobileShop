@@ -21,7 +21,7 @@ class IndexController extends Controller {
         $this->assign('page',$page);
 
         $user_id = session('member_id');
-        if ($user_id) {    //  未登录
+        if ($user_id) {    //  已登录
             $cart = M('shopping_car');
             $map['uid'] = $user_id;
             $cart_counts = $cart->where($map)->count();
@@ -32,7 +32,7 @@ class IndexController extends Controller {
 
     public function register() {
         $user_id = session('member_id');
-        if ($user_id) {    //  未登录
+        if ($user_id) {    //  已登录
             $cart = M('shopping_car');
             $map['uid'] = $user_id;
             $cart_counts = $cart->where($map)->count();
@@ -189,6 +189,31 @@ class IndexController extends Controller {
             session('member_avatar', $user['avatar']);
             return $this->success('登录成功',U('Index/index'));
         }
-    
+    }
+
+    public function detail() {      //  渲染商品详情
+        $pid = I('pid');
+        $product = M('product');
+        $res = $product->where(array('id' => $pid))->find();    //..查询商品详情
+
+        $brand = M('brand');
+        $category = M('category');
+        $res['category_name'] = $category->where(array('id' => $res['cid']))->getField('name');
+        $res['brand_name']  = $brand->where(array('id' => $res['brand_id']))->getField('name');
+        $res['addtime'] = date('Y-m-d', $res['addtime']);
+
+        $photo_list = explode(',', $res['photo_list']);     //..将商品详情图片字符串转化为数组
+
+        $user_id = session('member_id');
+        if ($user_id) {    //  已登录，查询购物车数量
+            $cart = M('shopping_car');
+            $map['uid'] = $user_id;
+            $cart_counts = $cart->where($map)->count();
+            $this->assign('cart_counts',$cart_counts);
+        }
+
+        $this->assign('product', $res);
+        $this->assign('photo_list', $photo_list);
+        $this->display();
     }
 }
