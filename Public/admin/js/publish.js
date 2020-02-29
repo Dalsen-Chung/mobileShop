@@ -1,6 +1,25 @@
 layui.use(['form', 'upload'], function(){
     var form = layui.form;
     var upload = layui.upload;
+
+    //  表单验证规则
+    form.verify({
+        price: function(value){ //value：表单的值
+            var priceReg = /(^[1-9]\d*(\.\d{1,2})?$)|(^0(\.\d{1,2})?$)/;
+            if (!priceReg.test(value)){
+                return '请输入正确的价格';
+            }
+        }
+        
+        //我们既支持上述函数式的方式，也支持下述数组的形式
+        //数组的两个值分别代表：[正则匹配、匹配不符时的提示文字]
+        ,stock: function(value) {
+            var stockReg = /^[1-9]\d*$/;
+            if (!stockReg.test(value)){
+                return '库存应该为正整数';
+            }
+        }
+    });
     
     //  上传单张商品封面图
     upload.render({

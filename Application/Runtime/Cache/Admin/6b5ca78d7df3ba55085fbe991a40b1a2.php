@@ -99,13 +99,13 @@
         <div class="layui-form-item">
           <label class="layui-form-label">商品单价(¥)</label>
           <div class="layui-input-block">
-            <input type="number" name="price" placeholder="请输入价格" lay-verify="required|number" autocomplete="off" class="layui-input">
+            <input type="number" name="price" placeholder="请输入价格" lay-verify="required|number|price" autocomplete="off" class="layui-input">
           </div>
         </div>
         <div class="layui-form-item">
           <label class="layui-form-label">库存量(台)</label>
           <div class="layui-input-block">
-            <input type="number" name="stock" placeholder="请输入数量" lay-verify="required|number" autocomplete="off" class="layui-input">
+            <input type="number" name="stock" placeholder="请输入数量" lay-verify="required|number|stock" autocomplete="off" class="layui-input">
           </div>
         </div>
         <div class="layui-form-item">
@@ -180,6 +180,7 @@
     <script src="/mobileShop/Public/home/js/jquery-3.4.1.min.js"></script>
     <script src="/mobileShop/Public/admin/layui.js"></script>
     <script src="/mobileShop/Public/admin/js/common.js"></script>
+    <script src="/mobileShop/Public/admin/js/order.js"></script>
     <script src="/mobileShop/Public/admin/js/brand.js"></script>
     <script src="/mobileShop/Public/admin/js/classify.js"></script>
     <script src="/mobileShop/Public/admin/js/member.js"></script>

@@ -2,6 +2,16 @@ layui.use(['table','form'], function () {
     var table = layui.table;
     var form = layui.form;
 
+    //表单验证规则
+    form.verify({
+        phone: function(value){ //value：表单的值
+            var phoneReg = /^1[3456789]\d{9}$/;
+            if (!phoneReg.test(value)){
+                return '请输入正确的手机号';
+            }
+        }
+    });
+
     //会员用户表格配置
     var memberTbOpt = {
         elem: '#memberList'
