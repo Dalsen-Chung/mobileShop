@@ -11,7 +11,7 @@
  Target Server Version : 80016
  File Encoding         : 65001
 
- Date: 26/02/2020 23:19:46
+ Date: 29/02/2020 23:07:16
 */
 
 SET NAMES utf8mb4;
@@ -93,6 +93,7 @@ CREATE TABLE `jx_order` (
   `price` decimal(10,2) DEFAULT NULL COMMENT '价格',
   `product_num` int(11) DEFAULT NULL COMMENT '商品数量',
   `status` tinyint(1) DEFAULT NULL COMMENT '订单状态，1支付成功，2已发货，3已取消',
+  `tracking_num` varchar(255) DEFAULT NULL COMMENT '快递单号',
   `addtime` int(12) DEFAULT NULL COMMENT '添加时间',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='订单表';
@@ -101,8 +102,8 @@ CREATE TABLE `jx_order` (
 -- Records of jx_order
 -- ----------------------------
 BEGIN;
-INSERT INTO `jx_order` VALUES (1, '20200226111603179084', 1, 8888.00, 1, 1, 1582686963);
-INSERT INTO `jx_order` VALUES (2, '20200226112049549734', 1, 15554.00, 2, 3, 1582687249);
+INSERT INTO `jx_order` VALUES (1, '20200226111603179084', 1, 8888.00, 1, 2, '111', 1582686963);
+INSERT INTO `jx_order` VALUES (2, '20200226112049549734', 1, 15554.00, 2, 2, '123', 1582687249);
 COMMIT;
 
 -- ----------------------------
@@ -179,13 +180,14 @@ CREATE TABLE `jx_shopping_car` (
   `num` int(11) DEFAULT '1' COMMENT '商品数量',
   `addtime` int(12) DEFAULT NULL COMMENT '添加时间',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='购物车表';
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='购物车表';
 
 -- ----------------------------
 -- Records of jx_shopping_car
 -- ----------------------------
 BEGIN;
 INSERT INTO `jx_shopping_car` VALUES (18, 2, 2, 8888.00, 1, 1582730089);
+INSERT INTO `jx_shopping_car` VALUES (19, 1, 4, 8888.00, 1, 1582982496);
 COMMIT;
 
 -- ----------------------------
@@ -223,6 +225,9 @@ CREATE TABLE `jx_user_address` (
   `uid` int(11) DEFAULT NULL COMMENT '用户ID',
   `receiver` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '收货人',
   `tel` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '收货人电话',
+  `province` varchar(255) DEFAULT NULL COMMENT '省',
+  `city` varchar(255) DEFAULT NULL COMMENT '市',
+  `district` varchar(255) DEFAULT NULL COMMENT '区',
   `address` text CHARACTER SET utf8 COLLATE utf8_general_ci COMMENT '地址详情',
   `postcode` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '邮编',
   `addtime` int(12) DEFAULT NULL COMMENT '添加时间',
@@ -233,7 +238,7 @@ CREATE TABLE `jx_user_address` (
 -- Records of jx_user_address
 -- ----------------------------
 BEGIN;
-INSERT INTO `jx_user_address` VALUES (2, 1, '小明', '13511111111', '上海浦东区', '241131', 1582640667);
+INSERT INTO `jx_user_address` VALUES (2, 1, '小明', '13511111112', '黑龙江省', '哈尔滨市', '松北区', '中山路131号', '241131', 1582640667);
 COMMIT;
 
 -- ----------------------------

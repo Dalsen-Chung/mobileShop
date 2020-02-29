@@ -72,7 +72,7 @@
             </div>
             <div class="form-group">
                 <label for="tel">收货人电话</label>
-                <input type="tel" name="tel" value="<?php echo ($user_address["tel"]); ?>" required class="form-control" id="tel" autocomplete="off" placeholder="请输入11位手机号">
+                <input type="tel" name="tel" id="address_phone" value="<?php echo ($user_address["tel"]); ?>" required class="form-control" id="tel" autocomplete="off" placeholder="请输入11位手机号">
             </div>
             <div class="form-group">
                 <label for="address">收货地址</label>
@@ -88,7 +88,7 @@
             </div>
             <div class="form-group">
                 <label for="postcode">邮编</label>
-                <input type="number" name="postcode" value="<?php echo ($user_address["postcode"]); ?>" required class="form-control" autocomplete="off" id="postcode" placeholder="请输入邮编">
+                <input type="number" name="postcode" id="address_postcode" value="<?php echo ($user_address["postcode"]); ?>" required class="form-control" autocomplete="off" id="postcode" placeholder="请输入邮编">
             </div>
             <div class="form-group" style="text-align: center;">
                 <button type="submit" class="btn btn-primary">保存</button>

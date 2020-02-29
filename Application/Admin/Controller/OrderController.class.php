@@ -24,8 +24,10 @@ class OrderController extends AdminBaseController {
         }
         $order_list[$key]['desc'] = implode('<br>', $descArr);
 
-        //  获取用户地址
+        //  获取收货信息
         $address = $user_address->where(array('uid' => $value['uid']))->find();
+        $order_list[$key]['receiver'] = $address['receiver'];
+        $order_list[$key]['tel'] = $address['tel'];
         $order_list[$key]['address'] = $address['province'].$address['city'].$address['district'].$address['address'];
     }
 

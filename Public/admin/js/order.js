@@ -17,6 +17,8 @@ layui.use(['table','form'], function () {
             , { field: 'desc', title: '商品描述', align: 'center', minWidth: 240 }
             , { field: 'status_text', title: '订单状态', align: 'center', minWidth: 100 }
             , { field: 'address', title: '发货地址', align: 'center', minWidth: 150 }
+            , { field: 'receiver', title: '收货人', align: 'center', minWidth: 50 }
+            , { field: 'tel', title: '收货人手机号', align: 'center', minWidth: 120 }
             , { field: 'tracking_num', title: '快递单号', align: 'center', minWidth: 100 }
             , { field: 'addtime', title: '下单时间', align: 'center', minWidth: 170 }
             , { title: '操作', align: 'center', toolbar: '#orderBar', width: 70 }
