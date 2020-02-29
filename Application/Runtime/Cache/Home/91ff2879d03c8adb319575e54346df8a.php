@@ -65,7 +65,7 @@
         <div class="page-header">
             <h3>我的收货地址</h3>
         </div>
-        <form method="POST" action="save_address" style="width: 400px; margin: 0 auto;">
+        <form id="addressForm" method="POST" action="save_address" style="width: 400px; margin: 0 auto;">
             <div class="form-group">
               <label for="receiver">收货人</label>
               <input type="text" name="receiver" value="<?php echo ($user_address["receiver"]); ?>" required class="form-control" autocomplete="off" id="receiver" placeholder="请输入收货人">
@@ -76,6 +76,14 @@
             </div>
             <div class="form-group">
                 <label for="address">收货地址</label>
+                <div data-toggle="distpicker" id="addressSelector" style="margin-bottom: 10px;"><!-- container -->
+                    <select name="province" value="<?php echo ($user_address["province"]); ?>" required></select><!-- 省 -->
+                    <select name="city" required></select><!-- 市 -->
+                    <select name="district" required></select><!-- 区 -->
+                    <span id="provinceText" style="display: none;"><?php echo ($user_address["province"]); ?></span>
+                    <span id="cityText" style="display: none;"><?php echo ($user_address["city"]); ?></span>
+                    <span id="districtText" style="display: none;"><?php echo ($user_address["district"]); ?></span>
+                </div>
                 <textarea name="address" required id="address" placeholder="请输入详细地址" autocomplete="off" class="form-control" rows="3"><?php echo ($user_address["address"]); ?></textarea>
             </div>
             <div class="form-group">
@@ -91,6 +99,7 @@
 <script src="/mobileShop/Public/home/js/jquery-3.4.1.min.js"></script>
 <script src="/mobileShop/Public/home/js/bootstrap.min.js"></script>
 <script src="/mobileShop/Public/home/js/common.js"></script>
+<script src="/mobileShop/Public/home/js/distpicker.min.js"></script>
 </body>
 
 </html>

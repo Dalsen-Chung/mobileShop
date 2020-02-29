@@ -9,6 +9,7 @@ class OrderController extends AdminBaseController {
     $product = M('product');
     $user = M('user');
     $order_list = $order->select();
+    $user_address = M('user_address');
     foreach ($order_list as $key => $value) {
         $order_list[$key]['username'] = $user->where(array('id' => $value['uid']))->getField('name');
         $order_list[$key]['addtime'] = date('Y-m-d H:i:s', $value['addtime']);
@@ -22,6 +23,10 @@ class OrderController extends AdminBaseController {
             array_push($descArr, '商品：'.$p_name.'，单价：¥'.$op_value['price'].'，数量：'.$op_value['num']);
         }
         $order_list[$key]['desc'] = implode('<br>', $descArr);
+
+        //  获取用户地址
+        $address = $user_address->where(array('uid' => $value['uid']))->find();
+        $order_list[$key]['address'] = $address['province'].$address['city'].$address['district'].$address['address'];
     }
 
     $res['code'] = 0;

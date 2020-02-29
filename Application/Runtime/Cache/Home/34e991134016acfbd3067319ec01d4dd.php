@@ -123,6 +123,7 @@
 <script src="/mobileShop/Public/home/js/jquery-3.4.1.min.js"></script>
 <script src="/mobileShop/Public/home/js/bootstrap.min.js"></script>
 <script src="/mobileShop/Public/home/js/common.js"></script>
+<script src="/mobileShop/Public/home/js/distpicker.min.js"></script>
 </body>
 
 </html>

@@ -180,6 +180,9 @@ class UserController extends HomeBaseController {
     public function save_address() {    //  保存收货地址
         $data['receiver'] = I('receiver');
         $data['tel'] = I('tel');
+        $data['province'] = I('province');
+        $data['city'] = I('city');
+        $data['district'] = I('district');
         $data['address'] = I('address');
         $data['postcode'] = I('postcode');
         $address = M('user_address');
@@ -291,6 +294,7 @@ class UserController extends HomeBaseController {
         $order = M('order');
         $order_product = M('order_product');
         $product = M('product');
+        $user_address = M('user_address');
         $order_list = $order->where(array('uid' => $uid))->select();
         foreach ($order_list as $key => $value) {
             $order_list[$key]['status_text'] = $this->order_status_map($value['status']);
@@ -304,6 +308,10 @@ class UserController extends HomeBaseController {
                 array_push($descArr, '商品：'.$p_name.'，单价：¥'.$op_value['price'].'，数量：'.$op_value['num']);
             }
             $order_list[$key]['desc'] = implode('<br>', $descArr);
+
+            //  获取用户地址
+            $address = $user_address->where(array('uid' => $value['uid']))->find();
+            $order_list[$key]['address'] = $address['province'].$address['city'].$address['district'].$address['address'];
         }
         $this->assign('order_list', $order_list);
         $this->display();
