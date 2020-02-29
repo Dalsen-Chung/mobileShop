@@ -85,7 +85,7 @@
         <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
       </script>
       <script type="text/html" id="avatarTpl">
-        <img src="/mobileShop/Uploads/images/avatar/{{d.avatar}}" style="width: 50px;" />
+        <img src="/mobileShop/Uploads/{{d.avatar}}" style="width: 50px;" />
       </script>
     </div>
   </div>

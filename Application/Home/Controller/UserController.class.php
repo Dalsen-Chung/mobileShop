@@ -294,6 +294,7 @@ class UserController extends HomeBaseController {
         $order_list = $order->where(array('uid' => $uid))->select();
         foreach ($order_list as $key => $value) {
             $order_list[$key]['status_text'] = $this->order_status_map($value['status']);
+            $order_list[$key]['addtime'] = date('Y-m-d H:i:s', $value['addtime']);
             $order_sn = $value['order_sn'];
             $op_list = $order_product->where(array('order_sn' => $order_sn))->select();
             $descArr = array();

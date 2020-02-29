@@ -75,6 +75,7 @@
               <td>订单总价</td>
               <td>商品数量</td>
               <td>订单状态</td>
+              <td>快递单号</td>
               <td>下单时间</td>
               <td>操作</td>
             </tr>
@@ -87,6 +88,7 @@
                 <td>¥<?php echo ($vo["price"]); ?></td>
                 <td><?php echo ($vo["product_num"]); ?></td>
                 <td><?php echo ($vo["status_text"]); ?></td>
+                <td><?php echo ($vo["tracking_num"]); ?></td>
                 <td><?php echo ($vo["addtime"]); ?></td>
                 <td>
                   <?php if(($vo["status"]) == "1"): ?><a href="<?php echo U('User/cancel_order');?>?order_sn=<?php echo ($vo["order_sn"]); ?>" class="btn btn-danger btn-xs" role="button">取消订单</a><?php endif; ?>
@@ -102,6 +104,7 @@
 </div>
 <script src="/mobileShop/Public/home/js/jquery-3.4.1.min.js"></script>
 <script src="/mobileShop/Public/home/js/bootstrap.min.js"></script>
+<script src="/mobileShop/Public/home/js/common.js"></script>
 </body>
 
 </html>

@@ -16,6 +16,7 @@
               <td>订单总价</td>
               <td>商品数量</td>
               <td>订单状态</td>
+              <td>快递单号</td>
               <td>下单时间</td>
               <td>操作</td>
             </tr>
@@ -29,6 +30,7 @@
                 <td>¥{$vo.price}</td>
                 <td>{$vo.product_num}</td>
                 <td>{$vo.status_text}</td>
+                <td>{$vo.tracking_num}</td>
                 <td>{$vo.addtime}</td>
                 <td>
                   <eq name="vo.status" value="1">

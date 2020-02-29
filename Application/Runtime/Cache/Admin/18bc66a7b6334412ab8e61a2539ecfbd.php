@@ -73,8 +73,20 @@
     </div>
 </div>
         <div class="layui-body main-content">
-<div class="layui-body">
-  <div style="padding: 15px;">订单管理</div>
+<div class="orderlist" style="padding: 15px;">
+  <div class="layui-card">
+    <div class="layui-card-header">
+      <span>订单管理</span>
+    </div>
+    <div class="layui-card-body">
+      <table id="orderList" lay-filter="orderTb"></table>
+      <script type="text/html" id="orderBar">
+        {{#  if(d.status === '1'){ }}
+        <a class="layui-btn layui-btn-xs" lay-event="deliver">发货</a>
+        {{#  } }}
+      </script>
+    </div>
+  </div>
 </div>
         </div>
         <div class="layui-footer footer">
@@ -84,6 +96,7 @@
     <script src="/mobileShop/Public/home/js/jquery-3.4.1.min.js"></script>
     <script src="/mobileShop/Public/admin/layui.js"></script>
     <script src="/mobileShop/Public/admin/js/common.js"></script>
+    <script src="/mobileShop/Public/admin/js/order.js"></script>
     <script src="/mobileShop/Public/admin/js/brand.js"></script>
     <script src="/mobileShop/Public/admin/js/classify.js"></script>
     <script src="/mobileShop/Public/admin/js/member.js"></script>
@@ -93,3 +106,19 @@
 </body>
 
 </html>
+
+<!-- 发货表单 -->
+<form class="layui-form" id="deliverForm" lay-filter="deliverForm" style="display: none; padding: 30px;">
+  <div class="layui-form-item">
+    <label class="layui-form-label">快递单号</label>
+    <div class="layui-input-block">
+      <input type="text" name="tracking_num" placeholder="请输入快递单号" required lay-verify="required" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+  <input type="hidden" name="id" autocomplete="off" class="layui-input">
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="confirmDeliver">确认发货</button>
+    </div>
+  </div>
+</form>
