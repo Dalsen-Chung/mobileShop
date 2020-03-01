@@ -82,6 +82,7 @@ layui.use(['table', 'form', 'upload'], function () {
       });
       $("#pd_edit_cover")[0].src = UPLOAD_URL + data.photo;
       var detail_photos = data.photo_list.split(',');
+      $('.pd_edit_img_list').empty(); //..清空dom
       detail_photos.forEach(function(item) {
         $('.pd_edit_img_list').append(`<img src="${UPLOAD_URL + item}" />`)
       });

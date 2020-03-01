@@ -78,7 +78,7 @@
     <div class="layui-card-header">
       <span>商品分类</span>
       <button type="button" id="addClassifyBtn" class="layui-btn layui-btn-sm">
-        <i class="layui-icon">&#xe608;</i> 添加商品
+        <i class="layui-icon">&#xe608;</i> 添加分类
       </button>
     </div>
     <div class="layui-card-body">
@@ -101,6 +101,7 @@
     <script src="/mobileShop/Public/home/js/jquery-3.4.1.min.js"></script>
     <script src="/mobileShop/Public/admin/layui.js"></script>
     <script src="/mobileShop/Public/admin/js/common.js"></script>
+    <script src="/mobileShop/Public/admin/js/order.js"></script>
     <script src="/mobileShop/Public/admin/js/brand.js"></script>
     <script src="/mobileShop/Public/admin/js/classify.js"></script>
     <script src="/mobileShop/Public/admin/js/member.js"></script>

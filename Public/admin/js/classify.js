@@ -98,7 +98,7 @@ layui.use(['table','form', 'upload'], function () {
     $('#addClassifyBtn').click(function () {
         layer.open({    //打开添加表单
             type: 1,
-            title: '添加商品品牌',
+            title: '添加商品分类',
             content: $('#addProductClassify')
         })
     });

@@ -11,7 +11,7 @@
  Target Server Version : 80016
  File Encoding         : 65001
 
- Date: 29/02/2020 23:07:16
+ Date: 01/03/2020 10:47:50
 */
 
 SET NAMES utf8mb4;
@@ -38,7 +38,7 @@ BEGIN;
 INSERT INTO `jx_admin_user` VALUES (1, 'admin', '许铭聪', '21232f297a57a5a743894a0e4a801fc3', 1, 1581403417);
 INSERT INTO `jx_admin_user` VALUES (2, 'admin1', '管理员2', '21232f297a57a5a743894a0e4a801fc3', 0, 1581403426);
 INSERT INTO `jx_admin_user` VALUES (3, '3', '3', '202cb962ac59075b964b07152d234b70', 1, 1581403426);
-INSERT INTO `jx_admin_user` VALUES (4, '3', '3', '3', 1, 1581403426);
+INSERT INTO `jx_admin_user` VALUES (4, '3', '测试3', '3', 1, 1581403426);
 COMMIT;
 
 -- ----------------------------
@@ -96,7 +96,7 @@ CREATE TABLE `jx_order` (
   `tracking_num` varchar(255) DEFAULT NULL COMMENT '快递单号',
   `addtime` int(12) DEFAULT NULL COMMENT '添加时间',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='订单表';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='订单表';
 
 -- ----------------------------
 -- Records of jx_order
@@ -104,6 +104,7 @@ CREATE TABLE `jx_order` (
 BEGIN;
 INSERT INTO `jx_order` VALUES (1, '20200226111603179084', 1, 8888.00, 1, 2, '111', 1582686963);
 INSERT INTO `jx_order` VALUES (2, '20200226112049549734', 1, 15554.00, 2, 2, '123', 1582687249);
+INSERT INTO `jx_order` VALUES (3, '20200229233224988631', 1, 15554.00, 2, 1, NULL, 1582990344);
 COMMIT;
 
 -- ----------------------------
@@ -117,7 +118,7 @@ CREATE TABLE `jx_order_product` (
   `price` decimal(10,2) DEFAULT NULL COMMENT '商品单价',
   `num` int(11) DEFAULT NULL COMMENT '商品数量',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='订单与商品中间表';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='订单与商品中间表';
 
 -- ----------------------------
 -- Records of jx_order_product
@@ -126,6 +127,8 @@ BEGIN;
 INSERT INTO `jx_order_product` VALUES (1, '20200226111603179084', 2, 8888.00, 1);
 INSERT INTO `jx_order_product` VALUES (2, '20200226112049549734', 1, 6666.00, 1);
 INSERT INTO `jx_order_product` VALUES (3, '20200226112049549734', 2, 8888.00, 1);
+INSERT INTO `jx_order_product` VALUES (4, '20200229233224988631', 4, 8888.00, 1);
+INSERT INTO `jx_order_product` VALUES (5, '20200229233224988631', 1, 6666.00, 1);
 COMMIT;
 
 -- ----------------------------
@@ -156,7 +159,7 @@ CREATE TABLE `jx_product` (
 -- ----------------------------
 BEGIN;
 INSERT INTO `jx_product` VALUES (1, 1, 1, 'Iphonexxxxx', '这是广告语', 6666.00, 'images/cover/2020-02-17/5e4a49ec66672.jpg', 'images/cover/2020-02-17/5e4aa6b2c9330.jpg,images/cover/2020-02-17/5e4aa6b2c9775.jpg', '这是商品详情', 1000, 34, 1, 1, 1581950645, 1581926923);
-INSERT INTO `jx_product` VALUES (2, 1, 1, 'iPhone XS', '这是广告语', 8888.00, 'images/cover/2020-02-17/5e4aa697efca4.jpeg', 'images/cover/2020-02-17/5e4a4a7138aed.jpg', '这是商品详情', 2000, 29, 1, 1, 1581950617, 1581927029);
+INSERT INTO `jx_product` VALUES (2, 1, 1, 'iPhone XS', '这是广告语', 8888.00, 'images/cover/2020-02-17/5e4aa697efca4.jpeg', 'images/cover/2020-02-17/5e4a4a7138aed.jpg', '这是商品详情', 2000, 29, 1, 1, 1582991807, 1581927029);
 INSERT INTO `jx_product` VALUES (3, 1, 1, 'iPhone XS', '这是广告语', 8888.00, 'images/cover/2020-02-17/5e4aa697efca4.jpeg', 'images/cover/2020-02-17/5e4a4a7138aed.jpg', '这是商品详情', 2000, 29, 1, 1, 1581950617, 1581927029);
 INSERT INTO `jx_product` VALUES (4, 1, 1, 'iPhone XS', '这是广告语', 8888.00, 'images/cover/2020-02-17/5e4aa697efca4.jpeg', 'images/cover/2020-02-17/5e4a4a7138aed.jpg', '这是商品详情', 2000, 29, 1, 1, 1581950617, 1581927029);
 INSERT INTO `jx_product` VALUES (5, 1, 1, 'iPhone XS', '这是广告语', 8888.00, 'images/cover/2020-02-17/5e4aa697efca4.jpeg', 'images/cover/2020-02-17/5e4a4a7138aed.jpg', '这是商品详情', 2000, 29, 1, 1, 1581950617, 1581927029);
@@ -180,14 +183,14 @@ CREATE TABLE `jx_shopping_car` (
   `num` int(11) DEFAULT '1' COMMENT '商品数量',
   `addtime` int(12) DEFAULT NULL COMMENT '添加时间',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='购物车表';
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='购物车表';
 
 -- ----------------------------
 -- Records of jx_shopping_car
 -- ----------------------------
 BEGIN;
 INSERT INTO `jx_shopping_car` VALUES (18, 2, 2, 8888.00, 1, 1582730089);
-INSERT INTO `jx_shopping_car` VALUES (19, 1, 4, 8888.00, 1, 1582982496);
+INSERT INTO `jx_shopping_car` VALUES (21, 1, 3, 8888.00, 1, 1583030806);
 COMMIT;
 
 -- ----------------------------
@@ -212,7 +215,7 @@ CREATE TABLE `jx_user` (
 -- Records of jx_user
 -- ----------------------------
 BEGIN;
-INSERT INTO `jx_user` VALUES (1, 'test', '测试用户11', '202cb962ac59075b964b07152d234b70', 'images/avatar/2020-02-23/5e527eb74b44c.jpg', '13511111111', 1, 14453.50, 1, 1582464695);
+INSERT INTO `jx_user` VALUES (1, 'test', '测试用户11', '202cb962ac59075b964b07152d234b70', 'images/avatar/2020-02-23/5e527eb74b44c.jpg', '13511111111', 1, 18899.50, 1, 1582464695);
 INSERT INTO `jx_user` VALUES (2, 'ceshi', 'ceshi', '202cb962ac59075b964b07152d234b70', 'images/avatar/2020-02-26/5e566f3cca065.jpg', '13511111111', 1, 0.00, 1, 1582722876);
 COMMIT;
 

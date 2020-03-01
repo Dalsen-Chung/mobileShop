@@ -68,7 +68,7 @@ class UserController extends AdminBaseController {
         $user_list = $user->limit($start, $limit)->order('addtime desc')->select();
         foreach ($user_list as $key => $value) {
             $user_list[$key]['status'] = $value['status'] == 1 ? '正常' : '禁用';
-            $user_list[$key]['balance'] = number_format(($value['balance']/100),2);
+            $user_list[$key]['balance'] = $value['balance'];
             $user_list[$key]['sex'] = $value['sex'] == 1 ? '男' : '女';
             $user_list[$key]['addtime'] =  date('Y-m-d H:i:s', $value['addtime']);
         }
