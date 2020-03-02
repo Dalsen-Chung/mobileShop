@@ -65,7 +65,7 @@
         <div class="page-header">
             <h3>用户注册</h3>
         </div>
-        <form method="POST" action="do_register" enctype="multipart/form-data" style="width: 400px; margin: 0 auto;">
+        <form method="POST" id="regForm" action="do_register" enctype="multipart/form-data" style="width: 400px; margin: 0 auto;">
             <div class="form-group">
                 <label for="reg_name">昵称</label>
                 <input type="text" name="name" required class="form-control" id="reg_name" placeholder="请输入昵称">

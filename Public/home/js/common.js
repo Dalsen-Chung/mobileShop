@@ -32,4 +32,30 @@ $(function(){
         }
         return true;
     });
+
+    /* 用户注册表单提交拦截 */
+    $('#regForm').submit(function(e) {
+        var phone = $('#reg_tel').val();
+        var phoneReg = /^1[3456789]\d{9}$/;
+
+        if (!phoneReg.test(phone)){
+            alert('请输入正确的手机号')
+            return false;
+        }
+
+        return true;
+    });
+
+    /* 修改用户表单提交拦截 */
+    $('#editUserForm').submit(function(e) {
+        var phone = $('#edit_tel').val();
+        var phoneReg = /^1[3456789]\d{9}$/;
+
+        if (!phoneReg.test(phone)){
+            alert('请输入正确的手机号')
+            return false;
+        }
+        
+        return true;
+    });
 });

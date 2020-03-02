@@ -65,7 +65,7 @@
         <div class="page-header">
             <h3>我的信息</h3>
         </div>
-        <form method="POST" action="save_info" style="width: 400px; margin: 0 auto;">
+        <form method="POST" id="editUserForm" action="save_info" style="width: 400px; margin: 0 auto;">
             <div class="form-group">
               <label for="edit_account">登录账号</label>
               <input type="text" name="account" value="<?php echo ($user_info["account"]); ?>" required class="form-control" readonly id="edit_account" placeholder="请输入账号">
