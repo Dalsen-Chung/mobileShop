@@ -209,6 +209,7 @@ class UserController extends HomeBaseController {
         }
     }
 
+    //  最新修改 2020.03.18
     public function settle() {  //  渲染结算页面
         $address = M('user_address');
         $user_id = session('member_id');
@@ -223,6 +224,10 @@ class UserController extends HomeBaseController {
             }
             $price_count = 0;   //  购物车总金额计算变量
             foreach ($cart_list as $key => $value) {
+                $judge_res = $this->judge_pd_stock($value['num'], $value['pid']);   //..判断商品库存是否充足
+                if (!$judge_res['is_enough']) { //..库存不足，跳出循环
+                    return $this->error('商品【'.$judge_res['pd_name'].'】'.'库存不足，最多可购买'.$judge_res['stock'].'件');
+                }
                 // 计算金额
                 $price_count = bcadd($price_count, bcmul($value['num'], $value['price']));
             }
@@ -236,6 +241,7 @@ class UserController extends HomeBaseController {
         }
     }
 
+    //  最新修改 2020.03.18
     public function do_settle() {   //  执行购物车结算
         $cart = M('shopping_car');
         $uid = session('member_id');
@@ -243,6 +249,11 @@ class UserController extends HomeBaseController {
         $cart_list = $cart->where($c_map)->select();   //  查询当前用户的购物车数据
         $price_count = 0;   //  购物车总金额计算变量
         foreach ($cart_list as $key => $value) {
+            //  减少商品库存
+            $dec_res = $this->dec_pd_stock($value['num'], $value['pid']);
+            if (!$dec_res) {
+                return $this->error('减少商品库存出错，结算失败');
+            }
             // 计算金额
             $price_count = bcadd($price_count, bcmul($value['num'], $value['price']));
         }
@@ -340,6 +351,41 @@ class UserController extends HomeBaseController {
             return $this->success('订单已取消');
         } else {
             return $this->error('订单取消失败');
+        }
+    }
+
+    //  新增 2020.03.18
+    private function judge_pd_stock($buy_num, $pid) {   //  判断商品库存是否充足
+        $res = array('is_enough' => true);
+        $product = M('product');
+        $pd = $product->where(array('id' => $pid))->find();
+        $stock = $pd['stock'];
+        if ($buy_num > $stock) {
+            $res['is_enough'] = false;
+            $res['stock'] = $stock;
+            $res['pd_name'] = $pd['name'];
+            return $res;
+        }
+        return $res;
+    }
+
+    //  新增 2020.03.18
+    private function dec_pd_stock($dec_num, $pid) {   //  减少商品库存
+        $product = M('product');
+        $stock = $product->where(array('id' => $pid))->getField('stock');
+        if ($dec_num > $stock) {    //  购物车数量大于库存，不执行减少
+            return false;
+        }
+        $new_stock = $stock - $dec_num;
+        $data['stock'] = $new_stock;
+        if ($new_stock == 0) {  //  如果卖完了则自动下架商品
+            $data['status'] = 0;
+        }
+        $res = $product->where(array('id' => $pid))->save($data);
+        if ($res !== false) {
+            return true;
+        } else {
+            return false;
         }
     }
 }
